@@ -1,4 +1,7 @@
-
+/*
+Original Code
+https://www.foodsafetykorea.go.kr/js/search_autocomplete_common.js
+*/
 	//설정값
 	var dq_searchForm = document.baseForm;
 	var dq_searchTextbox = dq_searchForm.searchTopTerm;
