@@ -1,19 +1,10 @@
 @charset "utf-8";
 
-/* @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-@import url(http://cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css); */
 
-/* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); font-family: 'Noto Sans KR', sans-serif; */
-@import url(/css/notosanskr.css);
-/*
+
 @font-face {
 	font-family: 'Noto Sans KR', 'sans-serif';
-}*/ /* 20201007 폰트 정의 형식에 맞지 않아 주석 처리 */
-/* @font-face{font-family:'NotoT';font-style:normal;font-weight:100;src:url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format("woff2"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format("woff"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format("opentype")}
-@font-face{font-family:'NotoL';font-style:normal;font-weight:300;src:url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format("woff2"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format("woff"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format("opentype")}
-@font-face{font-family:'NotoR';font-style:normal;font-weight:400;src:url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format("woff2"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format("woff"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format("opentype")}
-@font-face{font-family:'NotoM';font-style:normal;font-weight:500;src:url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format("woff2"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format("woff"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format("opentype")}
-@font-face{font-family:'NotoB';font-style:normal;font-weight:700;src:url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format("woff2"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format("woff"),url(http://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format("opentype")} */
+}
 
 @font-face{font-family:'NotoT';font-style:normal;font-weight:100;src:url(/font/NotoSansKR-Thin.woff2) format("woff2"),url(/font/NotoSansKR-Thin.woff) format("woff"),url(/font/NotoSansKR-Thin.otf) format("opentype")}
 @font-face{font-family:'NotoL';font-style:normal;font-weight:300;src:url(/font/NotoSansKR-Light.woff2) format("woff2"),url(/font/NotoSansKR-Light.woff) format("woff"),url(/font/NotoSansKR-Light.otf) format("opentype")}
@@ -28,10 +19,6 @@
 .head_lcg .menu > ul > li > h4 > a{position: absolute; top: 0px; left: 0px;}
 .head_lcg .menu > ul > li:nth-child(2) > h4 > a{left:179px;}
 .lcg .head_lcg .right{position: absolute; right: 0px; top:0px; z-index: 99;}
-
-/* HTML5 요소 브라우져 인식 */
-article, aside, figcaption, figure, footer, header, hgroup, nav, section {display: block;}
-mark {background: #FF0; color: #000}
 
 body{font-family: 'NotoL',Dotum,'굴림',Gulim,Helvetica,sans-serif; font-weight:300;}
 body, input, textarea, select, button, table, h1, h2, h3, h4, h5{font-size:14px; line-height:1.286em;}
