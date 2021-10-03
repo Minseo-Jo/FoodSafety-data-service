@@ -1,0 +1,1753 @@
+@import url(style_sub.css);
+
+/*================================
+  COMMON
+==================================*/
+
+/*** page-container ****/
+.page-container{border-top:2px solid #424252;padding-top:50px;}
+.page-container > article{margin-top:0;}
+.page-container .bs-callout, .bs-callout{padding:20px;margin-bottom:50px;border:1px solid #eee;border-left-width:5px;border-radius:3px;}
+.page-container .bs-callout-info, .bs-callout-info{border-left-color:#0070bd;}
+.page-container .bs-callout-danger, .bs-callout-danger{border-left-color:#FD0000;}
+.page-container .bs-callout p,.bs-callout p{margin:0;padding:0;line-height:20px;}
+.page-container article h2{font-size:25px;color:#0070bd;margin:50px 0 30px 0;line-height:35px;}
+.page-container > article > h2:first-child{margin-top:0;}
+-container h3{font-size:17px;color:#222;margin-top:30px;margin-bottom:15px;line-height:30px;}
+.page-container h4{font-size:14px;color:#0070bd;margin-top:0px;margin-bottom:15px;line-height:20px;}
+.page-container h5{text-align:center;font-size:15px;color:#0070bd;margin-top:0px;margin-bottom:20px;}
+.page-container p{font-size:13px;color:#222;margin-bottom:30px;line-height:20px;}
+.page-container p span{font-size:13px;color:#0070bd;margin-bottom:30px;line-height:20px;}
+.page-container article img{margin-bottom:30px;}
+.page-container .emphasis,.emphasis{padding:20px;margin-bottom:30px;border:1px solid #faebcc;border-radius:4px;color:#8a6d3b;background-color:#fcf8e3;}
+.page-container .emphasis.w,.emphasis.w{padding:20px;margin-bottom:30px;border:1px solid #D7D7D7;border-radius:4px;color:#333;background-color:#FFF;}
+.page-container .emphasis ul:last-child{margin-top:15px;color:#8a6d3b;}
+.page-container .emphasis.w ul:last-child{margin-top:0;color:#333;}
+.page-container .emphasis ul,.page-container .emphasis ul:first-child{padding:0 0 0 15px !important;margin:0;}
+.page-container .emphasis p{font-size:13px;color:#222;margin-bottom:30px;line-height:20px;}
+.page-container .emphasis p:last-child{margin-bottom:0;}
+.page-container .emphasis h3:first-child{margin-top:0;}
+.page-container .emphasis span{font-size:16px;color:#222;margin-bottom:20px;line-height:30px;font-weight:bold}
+.page-container .emphasis:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+/* Table Default */
+.page-container table,.scroll-container table{clear:both;width:100%;border-top:1px solid #0070bd;margin-bottom:30px;margin-top:-1px;border-collapse:separate;}
+.page-container table caption,.scroll-container table caption{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0);position: absolute; display: block;}
+.page-container table th,.scroll-container table th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;font-size:15px;color:#000;text-align:center;padding:15px 5px;line-height:20px;font-weight:bold;border-collapse:collapse}
+.page-container table td,.scroll-container table td{border-bottom:1px solid #D7D7D7;font-size:15px;padding:12px 5px;line-height:19px;text-align:left;font-weight:normal;color:#000;border-collapse:collapse}
+.page-container table.tc td{border-bottom:1px solid #D7D7D7;font-size:13px;padding:12px 5px;line-height:20px;text-align:center;font-weight:normal;color:#000;border-collapse:collapse}
+.page-container table .img{padding:0;}
+.page-container table .tr{text-align:right !important;} /* 우측정렬 */
+.page-container table .tl{text-align:left !important;} /* 좌측정렬 */
+.page-container table .tc{text-align:center !important;} /* 중앙정렬 */
+.page-container table td.num,.scroll-container table td.num{font-size:11px;padding:15px 5px;line-height:15px;text-align:center;font-weight:normal;color:#9797A6;}
+.page-container table td a.content-title{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;line-height:23px;}
+.page-container table td a,.scroll-container table td a{color:#005baa;} /*2015-03-18 수정*/
+.page-container table td a:hover,.scroll-container table td a:hover{color:#0070bd;}
+.page-container table td img{margin:0;padding:0;display:inline;}
+/* Table column-line */
+table.col{clear:both;width:100%;border-top:1px solid #0070bd;margin-bottom:30px;margin-top:-1px;border-collapse:collapse;}
+table.col th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;border-right:1px solid #D7D7D7;font-size:13px;color:#000;text-align:center;padding:15px 5px;line-height:20px;font-weight:bold;border-collapse:collapse}
+table.col td{border-bottom:1px solid #D7D7D7;border-right:1px solid #D7D7D7;font-size:13px;padding:12px 5px;line-height:20px;text-align:center;font-weight:normal;color:#000;border-collapse:collapse}
+table.col th:last-child,table.col td:last-child{border-right:none;}
+table.col .tl{text-align:left;} /* 좌측정렬 */
+.board-footer{text-align:center;margin-bottom:30px;}
+/* Button Default */
+.btn-m{padding:5px 8px;margin-left:10px;padding-left:10px;}
+.btn-xxs{padding:2px 8px;font-size:11px;margin-left:10px;padding-left:8px;padding-right:8px;padding-top:4px;}
+.btn-xxss{padding:2px 8px;font-size:11px;margin-left:3px;padding-left:8px;padding-right:8px;padding-top:4px;}
+/*================================
+  fileViewer
+==================================*/
+
+.fileViewer {margin-bottom:0px;}
+.fileViewer li {border-bottom: 1px solid #eee;}
+.fileViewer .fileBtn{color:#404040; padding-top:9px; padding-bottom:10px; margin-left:10px; font-size:9pt; }
+.fileViewer .fileBtn .fileName{padding:0px 25px; text-align:left; font-size:15px; background: url(../../img/common/attach-file-02.jpg) no-repeat 0px 2px;}
+.fileViewer .fileBtn .file-size{color:#9196b1ee; padding-right:7px; font-size: 11px;}
+.fileViewer .fileBtn a {color:#404040;}
+.fileViewer .fileBtn a img{ display:inline;}
+/* .fileViewer li span{padding: 4px 5px 7px 4px; color:#404040; border:1px solid #D7D7D7; border-radius:7px;} */
+.fileViewer .fileBtn span{padding: 0px 3px 7px 1px; color:#404040; float:right;}
+.fileViewer .fileBtn span a{color:#404040 !important;}
+
+
+.bbs-fileViewer {border: 1px solid #D7D7D7;border-radius: 3px;padding: 0px 15px 20px 15px; margin-bottom: 30px; background:#fcfcfc;}
+.bbs-fileViewer .fileBtn{color:#404040; padding-top:9px; padding-bottom:15px; margin-left:10px; font-size:10pt; }
+.bbs-fileViewer .fileBtn a .fileName{padding-right:6px; color:#424251;}
+.bbs-fileViewer .fileBtn .file-size{color:#9196b1ee; padding-right:7px; font-size: 11px;}
+.bbs-fileViewer .fileBtn a {color:#424251;}
+.bbs-fileViewer .fileBtn a img{ display:inline; margin:0px auto !important;}
+/* .fileViewer li span{padding: 4px 5px 7px 4px; color:#404040; border:1px solid #D7D7D7; border-radius:7px;} */
+/* .bbs-fileViewer .fileBtn span{padding: 3px 3px 7px 1px; color:#404040;} */
+.bbs-fileViewer .fileBtn span a{color:#404040 !important;}
+
+/*================================
+  Safety Food Life > Food
+==================================*/
+/* FOOD CODEX */
+.codex-update{margin-bottom:20px;font-size:15px;font-weight:bold}
+.codex-index{border:1px solid #BBBBBB;border-radius:5px;border-bottom-left-radius:0;border-bottom-right-radius:0;margin:0;padding:17px 20px}
+.codex-index li{float:left;display:inline-block;width:44%;margin:3px 0}
+.codex-index li:nth-child(odd){clear:both;float:left;width:53%;margin-right:3%}
+.codex-index li a{color:#313140}
+.codex-index li a:hover{color:#3686be}
+.codex-index:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both}
+.codex-search input[type=text], .revision-search input[type=text]{color:#333;background-color:#fff;border:1px solid #DFDDDD;height:37px;font-size:13px;padding:5px 7px;width:230px;display:inline-block;font-weight:bold;line-height:27px;margin-right:5px}
+.codex-search{border:1px solid #BBBBBB;border-radius:5px;border-top-left-radius:0;border-top-right-radius:0;margin:0;padding:20px;text-align:center;border-top:none;background:#F6F6F6}
+.revision-search{border:1px solid #BBBBBB;border-radius:5px;margin:0;padding:20px;text-align:center;background:#F6F6F6;margin-bottom:20px}
+.codex-search .btn-default, .revision-search .btn-default{font-weight:bold;padding:8px 20px}
+.codex-list{margin:0;padding:0;line-height:30px;font-size:15px}
+.codex-list li{list-style:none}
+.codex-list li ul{padding-left:20px}
+.codex-container > .codex-list > li > .codex-list{padding-left:0;font-size:18px;font-weight:bold;}
+.codex-container > .codex-list > li > .codex-list > li > .codex-list{font-size:15px;font-weight:normal;}
+.bs-callout h3{margin:0;padding:0}
+/** FOOD CODEX - Inner Content **/
+.codex > #inner-view > .inner-head >.category{font-size:12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:800px}
+.codex > #inner-view > .inner-head > h1{font-size:15px;line-height:25px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:800px}
+.codex .codex-content{clear:right;padding:20px 0 0 0;height:600px;overflow:hidden}
+.codex .codex-content pre{background:#FFF;border:none;margin:0;padding:0;font-family:'맑은고딕',Malgun Gothic,Arial,Helvetica,sans-serif !important;font-size:13px}
+.mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical{right:-10px !important}
+/* FOOD CODEX - REVISION */
+#revision{width:680px;height:493px;overflow-y:scroll;margin-bottom:30px;} /* 높이는 크롬 최적화 */
+#revision > table{width:680px;text-align:center;border-collapse:collapse;table-layout:fixed;border:1px solid #D7D7D7;margin:0;}
+#revision > table caption{position:absolute !important; top:-9999px !important; left:-9999px !important; font-size:1px !important; width:1px !important; height:1px !important; color:rgba(255, 255, 255, 0) !important;}
+#revision > table thead{background:url(../img/food/bg-thead-revision.png) no-repeat;margin:-1px 0 0 -1px;width:680px;display:table;table-layout:fixed;position:absolute;height:93px;}
+#revision > table th{background-color:transparent;border-bottom:none;font-size:12px;color:#000;text-align:center;padding:15px 5px;line-height:15px;font-weight:bold;border-collapse:collapse;}
+#revision > table td{border-bottom:1px solid #D7D7D7;border-right:1px solid #D7D7D7;font-size:12px;padding:12px 5px;line-height:15px;text-align:left;font-weight:normal;color:#000;border-collapse:collapse;}
+#revision > table tbody tr:first-child td{padding-top:105px;}
+#revision > table td img{margin:0 auto;}
+/* FOOD CODEX - Q&amp;A */
+#qna{width:680px;height:450px;overflow-y:scroll;margin-bottom:30px;} /* 높이는 크롬 최적화 */
+#qna > table{width:680px;text-align:left;border-collapse:collapse;table-layout:fixed;border-top:1px solid #D7D7D7;margin:0;}
+#qna > table caption{position:absolute !important; top:-9999px !important; left:-9999px !important; font-size:1px !important; width:1px !important; height:1px !important; color:rgba(255, 255, 255, 0) !important;}
+#qna > table thead{margin:-1px 0 0 -1px;width:680px;display:table;table-layout:fixed;position:absolute;}
+#qna > table th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;border-top:1px solid #0070bd;font-size:12px;color:#000;text-align:center;padding:15px 5px;line-height:16px;font-weight:bold;border-collapse:collapse;}
+#qna > table td{border-bottom:1px solid #D7D7D7;font-size:12px;padding:12px 5px;line-height:16px;text-align:left;font-weight:normal;color:#000;border-collapse:collapse;}
+#qna > table tr td:last-child{padding:5px;}
+#qna > table tbody tr:first-child td{padding:52px 5px 5px 5px;}
+#qna > table td img{margin:0 auto;}
+
+/*================================
+  Safety Food Life > mfds
+==================================*/
+.page-container .bs-underline{border-bottom:1px solid #d7d7d7;padding:0;margin:0;margin-top:15px;}
+.page-container .bs-underline li{float:left;display:inline-block;list-style:none;}
+.page-container .bs-underline li span{color:#00a6be;font-size:13px;font-weight:bold;}
+.page-container .bs-underline li:nth-child(even){width:530px;}
+.page-container .bs-underline .wt-thumbnail{list-style:none;background:no-repeat 50% 0;width:120px;height:100px;text-align:center;padding-top:85px;margin-right:15px;font-weight:bold; box-sizing:border-box;}
+.page-container .bs-underline:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*================================
+  Safety Food Life > pack
+==================================*/
+.page-container .list-line{border-bottom:1px solid #d7d7d7;border-top:1px solid #0070bd;padding:0;margin:0;margin-top:10px;margin-bottom:10px;background-color:#f6f6f6;}
+.page-container .list-line li{list-style:none;margin-top:10px;margin-bottom:10px;font-size:16px;color:#000;text-align:center;font-weight:bold;}
+.page-container .list-line:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.page-container .list-underline{border-bottom:1px solid #d7d7d7;padding:0;margin:0;margin-top:10px;margin-bottom:10px;}
+.page-container .list-underline li{float:left;display:inline-block;list-style:none;margin-top:5px;margin-bottom:10px;}
+.page-container .list-underline:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.emphasis span{font-size:16px;color:#222;margin-bottom:20px;line-height:30px;font-weight:bold}
+.page-container .box{padding:25px;border:1px solid #ececec;border-radius:4px;color:#ececec;background-color:#f8f8f8;}
+.page-container .box .icon{float:left;margin-right:10px;background:url(../../img/common/list_icon_01.gif) no-repeat 0 0;}
+.page-container .box dl{height:100%;overflow:hidden;padding:0;margin:0;}
+.page-container .box dt{padding:0;margin:0;float:left;display:inline-block;}
+.page-container .box dt img{padding:0;margin:2px;}
+.page-container .box dd{padding:0;margin:0;float:left;display:inline-block;width:450px;}
+.page-container .box ul{padding:0;margin:0;margin-left:30px;}
+.page-container .box li{display:block;list-style:none;padding:0;margin:0;background:url(../img/common/list_icon_01.gif) no-repeat 0 11px;padding:8px 0 0 18px;color:#222 ;font-size:14px;}
+.page-container .box li span{color:#222;font-size:13px;display:table-row;}
+.page-container .box:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*================================
+  Safety Food Life > foodimport
+==================================*/
+.page-container .search-condition{border:1px solid #D7D7D7;border-bottom:none;border-top-left-radius:5px;border-top-right-radius:5px;margin:0;padding:0;text-align:center;background:#FFF;margin-bottom:0;}
+.search-condition dl{padding:20px 20px 10px;margin:0;}
+.search-condition dl dt,.search-condition dl dd{float:left;display:inline-block;margin-bottom:10px;}
+.search-condition dl dt{clear:both;float:left;width:90px;text-align:left;padding-top:10px;}
+.search-condition dl ul{margin:0;padding:0;}
+.search-condition dl li{float:left;display:inline-block;margin-right:10px;}
+.search-condition dl li span{display:inline-block;padding-top:10px;}
+.page-container .search-condition:after,.search-condition dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.page-container .font01{font-size:20px;color:#0070bd;margin-bottom:20px;line-height:30px;}
+.page-container .box01{margin-top:32px;padding:25px;border:1px solid #ececec;color:#ececec;background-color:#f8f8f8;}
+.page-container .box02{border:1px solid #ececec;color:#ececec;background-color:#f8f8f8;}
+.page-container .box01 p{margin:0;}
+.page-container .box03{padding:25px;border:1px solid #ececec;border-radius:4px;color:#ececec;background-color:#f8f8f8;}
+.import .import-content pre{background:#FFF;border:none;margin:0;padding:0;font-family:'맑은고딕',Malgun Gothic,Arial,Helvetica,sans-serif !important;font-size:13px;margin-top:20px;}
+.sub-btn{margin:0;margin-bottom:20px;text-align:right;}
+.sub-btn h3{margin:0;display:inline-block;float:left;color:#0070bd;}
+.sub-btn:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.search-container02{margin:0;padding:0;}
+.search-container02 li{float:left;}
+.search-container02 form{line-height:40px;display:inline-table;}
+.search-container02 fieldset,fieldset{margin:0;padding:0;}
+.search-container02 legend,legend{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}
+/*.search-container02 label,label{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0);  position: absolute; display: block;}*/
+.search-container02 .selecter{display:inline-table;margin-right:5px;}
+.search-container02 .btn,.board-footer .btn{height:37px;padding:9px 20px;}
+.search-container02 .selecter span{padding:5px 27px 5px 7px;height:35px;line-height:25px;border-color:#DFDDDD;}
+.search-container02 input[type=text]{color:#333;background-color:#fff;border:1px solid #DFDDDD;height:37px;font-size:13px;padding:5px 7px;width:230px;display:inline-block;font-weight:bold;line-height:27px;margin-right:5px;}
+.total02{float:left;display:inline-block;padding-top:22px;padding-left:3px;font-size:11px;color:#9797A5;}
+.search-wrap02{float:right;margin-top:-10px;margin-bottom:16px;display:inline-block;text-align:right;}
+.search-wrap02 ul{margin:0;padding:0;list-style:none;}
+.search-wrap02 ul li{float:left;display:inline-block;}
+.search-container02:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.tableset{clear:both;width:100%;}
+.tbody-scroll table{width:100%;table-layout:fixed;}
+.tbody-scroll table td{text-align:right;font-size:11px;color:#5E6068;}
+.tbody-scroll table th,.tbody-scroll table td{border:1px solid #D7D7D7;padding:5px;}
+.tbody-scroll table tbody th{background:#FBFBFB;}
+.tbody-scroll table tfoot th,.tbody-scroll table tfoot td{background:#F6F6F6;color:#000;}
+.tbody-scroll table tfoot{width:100%;}
+.chart-select{line-height:25px;text-align:right;margin-bottom:5px;float:right;display:inline-block;}
+.chart-select .selecter{height:31px;}
+.chart-select .selecter .selecter-selected{padding:2px 10px;display:inline-block;}
+.chart-select:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.chart{clear:both;border:1px solid #D7D7D7;border-radius:3px;padding:10px;margin-bottom:20px; box-sizing:border-box;}
+
+/*================================
+  Safety Food Life > trace.html
+==================================*/
+ul.trace-comment li{color:#8a6d3b;}
+.page-container .emphasis ul.trace-search, .page-container .emphasis ul.trace-search:first-child{display:block;margin:0;padding:0 !important;list-style:none;}
+ul.trace-search li{float:left;display:inline-block;margin-right:5px;color:#8a6d3b;}
+ul.trace-search li label{position:absolute;}
+ul.trace-search li:last-child{padding-top:10px;}
+ul.trace-search input{border-radius:4px;border:1px solid #D7D7D7;height:40px;width:300px;padding:0 10px;font-size:20px;font-weight:bold;margin-top:10px;}
+ul.trace-search:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.result h2{margin-bottom:5px !important;}
+.result h2 .meta{width:40%;font-size:15px;font-weight:normal;border:none;display:inline-block;}
+.result table tr:hover th,.result table tr:hover td{cursor:auto;}
+.result .table-board td{text-align:center;}
+
+/*================================
+  Safety Food Life > food-additives
+==================================*/
+.page-container * {box-sizing:border-box;}
+.page-container .bs-underline02{padding:0;margin:0;margin-top:30px;margin-bottom:30px;padding:0;}
+.page-container .bs-underline02 li{float:left;display:inline-block;list-style:none;border-bottom:1px solid #d7d7d7;padding:15px 0 15px 5px;font-weight:bold;width:33.3333%;}
+.page-container .bs-underline02 li:nth-child(3n+1){clear:both;float:left;}
+.page-container .bs-underline02:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.box-container02{margin-top:90px;padding:0;}
+.box-container02.sp{border:1px solid #D7D7D7;border-right:none;border-bottom:none;margin:0;padding:0;}
+.box-container02 > li{float:left;display:inline-block;background-color:#F0F1F3;line-height:50px;height:50px;list-style:none;margin:0;padding:0;}
+.box-container02 > li a{color:#000;}
+.box-container02 > li a:hover{color:#0070bd;}
+.box{display:block;background-color:#F0F1F3;line-height:50px;height:50px;margin:0;padding:0;text-align:center;border-bottom:1px solid #D7D7D7;border-right:1px solid #D7D7D7;font-size:13px;font-weight:bold;color:#31313F;}
+.box-container02 > li:last-child .tab{border-right:none;}
+.box-container03{margin-top:33px;padding:0;}
+.search-container03{margin-top:32px;padding:0;}
+.search-container03 li{float:left;}
+.search-container03 form{line-height:40px;display:inline-table;}
+.search-container03 fieldset,fieldset{margin:0;padding:0;}
+.search-container03 legend,legend{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0);  position: absolute; display: block;}
+/*.search-container03 label,label{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0);  position: absolute; display: block;}*/
+.search-container03 .selecter{display:inline-table;margin-right:5px;}
+.search-container03 .btn,.board-footer .btn{height:37px;padding:9px 20px;}
+.search-container03 .selecter span{padding:5px 27px 5px 7px;height:35px;line-height:25px;border-color:#DFDDDD;}
+.search-container03 input[type=text]{color:#333;background-color:#fff;border:1px solid #DFDDDD;height:37px;font-size:13px;padding:5px 7px;width:230px;display:inline-block;font-weight:bold;line-height:27px;margin-right:5px;}
+.category02{margin:0;padding:0;}
+.category02 li{margin:0 0 5px 0;padding:0;list-style:none;}
+.category02 li a,.category02 li span{margin:0 7px 10px 7px;padding:7px 20px 7px 20px;float:left;display:block;border:1px solid #BBB;background-color:#FFF;line-height:22px;border-radius:5px;text-align:center;font-size:13px;font-weight:bold;color:#31313F;}
+.category02 li a.active,.category02 li a:hover{background-color:#0070bd;color:#FFF;}
+.list-container02.recipe .category02 li a.active,.list-container.recipe .category02 li a:hover{background-color:#FD0000;color:#FFF;}
+section .bs-callout02{padding:20px;border:1px solid #eee;border-left-width:5px;border-radius:3px;}
+section .bs-callout02-danger{border-left-color:#FD0000;}
+section .bs-callout02 p{margin:0;padding:0;line-height:20px;}
+section .bs-callout02 p img{margin:0 20px 0 0;border:1px solid #CACAD9;width:190px;float:left;}
+section .bs-callout02:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*=========================================
+  Safety Food Life > Food-raw-material-db
+===========================================*/
+.search-container04{margin-top:32px;padding:0;}
+.search-container04 .btn-right{margin-bottom:20px !important;}
+.search-container04 li{float:left;}
+.search-container04 form{line-height:40px;}	
+.search-container04 fieldset,fieldset{margin-bottom:-10px;padding:0;}
+.search-container04 legend,legend{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}
+/*.search-container04 label,label{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}*/
+.search-container04 .selecter{display:inline-table;margin-right:5px;}
+.search-container04 .btn,.board-footer .btn{height:37px;padding:9px 20px;}
+.search-container04 .selecter span{padding:5px 27px 5px 7px;height:35px;line-height:25px;border-color:#DFDDDD;}
+.search-container04 input[type=text]{color:#333;background-color:#fff;border:1px solid #DFDDDD;height:37px;font-size:13px;padding:5px 7px;width:160px;display:inline-block;font-weight:bold;line-height:27px;margin-right:5px;}
+.search-container04 .box03{display:block;background-color:#F0F1F3;line-height:50px;height:137px;margin-top:32px;padding:0;text-align:center;border:1px solid #D7D7D7;font-size:13px;font-weight:bold;color:#31313F;}
+.search-container04 .box04{display:block;background-color:#F0F1F3;line-height:50px;height:347px;margin-top:32px;padding:0;text-align:center;border:1px solid #D7D7D7;font-size:13px;font-weight:bold;color:#31313F;}
+.search-wrap03{float:left;display:inline-block;text-align:right;}
+.search-wrap03 ul{margin:0;padding:0;list-style:none;}
+.search-wrap03 ul li{float:left;display:inline-block;}
+.search-wrap03 p{float:left;margin-top:10px;margin-right:5px;padding:0;line-height:20px;width:90px;}
+.search-wrap03 .text{text-align:left;margin-top:10px;margin-left:40px;padding:0;line-height:20px;color:#31313F;}
+.search-wrap03 .btn02{float:right;margin-right:5px;margin-top:10px;padding:0;}
+.page-container .view{width:600px;margin:0 0 10px 0;font-size:13px;line-height:20px;float:left;}
+.page-container .view-img{width:350px;float:right;margin:0;display:inline-block;}
+.page-container .view-img:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.view-img .roller-item{width:350px;height:350px;}
+.view-img .refs{padding:10px;background:#F6F6F6;border:1px solid #D7D7D7;border-top:none;}
+.view-img .comment{text-align:center;margin-top:20px;color:#9797A5;}
+.view-img .comment span{color:#39C;font-weight:bold;}
+.roller{width:100%;}
+.roller *{-webkit-tap-highlight-color:rgba(0, 0, 0, 0);-webkit-touch-callout:none;}
+.roller,.roller .roller-viewport{position:relative;}
+.roller .roller-canister{margin:0;overflow:hidden;position:relative;-webkit-transition:-webkit-transform 0.4s ease;transition:transform 0.4s ease;-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+.roller .roller-item{float:left;margin:0;}
+.roller .roller-item img{border:1px solid #D7D7D7;padding:1px;}
+.roller .roller-canister,.roller .roller-item{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}
+.roller .roller-controls,.roller .roller-pagination{display:none;margin:0;padding:0;width:100%;}
+.roller .roller-controls.visible,.roller .roller-pagination.visible{display:block;}
+.roller .roller-pagination{position:absolute;text-align:center;margin-top:-24px;width:300px;margin-left:25px;}
+.roller .roller-control{cursor:default;text-indent:-99999px;display:inline-block;height:24px;width:24px;background:#F6F6F6;}
+.roller .roller-page,.roller .roller-control.enabled{cursor:pointer;}
+.roller .roller-control.previous{background:url(../img/common/bt_prev.gif) no-repeat 50% 50%;}
+.roller .roller-control.previous:hover{background-position:50% -81px;}
+.roller .roller-control.next{float:right;display:inline-block;background:url(../img/common/bt_next.png) no-repeat 50% 50%;}
+.roller .roller-control.next:hover{background-position:50% -81px;}
+.roller .roller-page{padding:0;margin:1px;background:#F6F6F6;height:24px;width:24px;font-size:11px;display:inline-block;line-height:24px;}
+.roller .roller-page.active{background:#777;color:#FFF;}
+.roller .roller-caption{display:none;}
+.roller .roller-caption.active{display:block;}
+.roller.single .roller-item{display:none;}
+.roller.single .roller-item.active{display:block;}
+.ndsl label{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}
+.ndsl input[type=text]{height:30px}
+.ndsl p{margin:0;margin-top:10px;}
+
+/*==================================
+  Safety Food Life > food-materials
+====================================*/
+.total03{float:left;display:inline-block;padding-top:0;padding-left:3px;font-size:11px;color:#9797A5;}
+.search-container05{margin:0;padding:0 0 54px 0;border-bottom:1px solid #D7D7D7;}
+.search-container05 form{line-height:40px;display:inline-table;}
+.search-container05 fieldset,fieldset{margin:0;padding:0;}
+.search-container05 legend,legend{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}
+/*.search-container05 label,label{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}*/
+.search-container05 .selecter{display:inline-table;margin-right:5px;}
+.search-container05 .btn,.board-footer .btn{height:37px;padding:9px 20px;}
+.search-container05 .selecter span{padding:5px 27px 5px 7px;height:35px;line-height:25px;border-color:#DFDDDD;}
+.search-container05 input[type=text]{color:#333;background-color:#fff;border:1px solid #DFDDDD;height:37px;font-size:13px;padding:5px 7px;width:230px;display:inline-block;font-weight:bold;line-height:27px;margin-right:5px;}
+.toxic-page-container{padding-top:20px;}
+.toxic-page-container > article{margin-top:0;}
+.toxic-page-container .bs-callout, .bs-callout{padding:20px;margin-bottom:50px;border:1px solid #eee;border-left-width:5px;border-radius:3px;}
+.toxic-page-container .bs-callout-info, .bs-callout-info{border-left-color:#0070bd;}
+.toxic-page-container .bs-callout-danger, .bs-callout-danger{border-left-color:#FD0000;}
+.toxic-page-container .bs-callout p,.bs-callout p{margin:0;padding:0;line-height:20px;}
+.toxic-page-container h2{font-size:25px;color:#0070bd;margin:50px 0 30px 0;line-height:35px;}
+.toxic-page-container > article > h2:first-child{margin-top:0;}
+.toxic-page-container h3{font-size:17px;color:#222;margin-bottom:20px;line-height:30px;}
+.toxic-page-container p{font-size:13px;color:#222;margin-bottom:30px;line-height:20px;}
+.toxic-page-container img{margin-bottom:30px;}
+.emphasis{padding:20px;margin-bottom:30px;border:1px solid #faebcc;border-radius:4px;color:#8a6d3b;background-color:#fcf8e3;}
+.toxic-page-container table{clear:both;width:100%;border-top:1px solid #0070bd;margin-bottom:30px;margin-top:-1px;border-collapse:collapse;}
+.toxic-page-container table caption{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0);  position: absolute; display: block;}
+.toxic-page-container table th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;font-size:13px;color:#000;text-align:center;padding:15px 5px;line-height:20px;font-weight:bold;border-collapse:collapse}
+.toxic-page-container table td{border-bottom:1px solid #D7D7D7;font-size:13px;padding:12px 5px;line-height:20px;text-align:left;font-weight:normal;color:#000;border-collapse:collapse}
+.toxic-page-container table .img{padding:0;}
+.toxic-page-container table .tr{text-align:right;} /* 우측정렬 */
+.toxic-page-container table .tl{text-align:left;} /* 좌측정렬 */
+.toxic-page-container table .tc{text-align:center;} /* 중앙정렬 */
+.toxic-page-container table.col{clear:both;width:100%;border-top:1px solid #0070bd;margin-bottom:0;margin-top:-1px;border-collapse:collapse;}
+.toxic-page-container table.col th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;border-right:1px solid #D7D7D7;font-size:13px;color:#000;text-align:center;padding:15px 5px;line-height:20px;font-weight:bold;border-collapse:collapse}
+.toxic-page-container table.col td{border-bottom:1px solid #D7D7D7;border-right:1px solid #D7D7D7;font-size:13px;padding:12px 5px;line-height:20px;text-align:center;font-weight:normal;color:#000;border-collapse:collapse}
+.toxic-page-container table.col th:last-child,.page-container table.col td:last-child{border-right:none;}
+.toxic-page-container table.col .tl{text-align:left;} /* 좌측정렬 */
+.toxic-page-container .board-footer{text-align:center;margin-bottom:30px;}
+.toxic-cat-container{background-color:#F0F1F3;border:1px solid #D7D7D7;padding:5px 20px 20px 20px;margin-top:20px;}
+.page-container h6{text-align:left;font-size:25px;color:#0070bd;margin:0 0 30px 0;line-height:35px;}
+.page-container > article > h6:first-child{margin-top:0;}
+.Diagnosis01{margin:0;padding:0;}
+.Diagnosis01 img{margin:0;padding:0;}
+.Diagnosis02{margin:0;padding:0;background:url(../img/safetyfoodlife/Diagnosis_02.png) no-repeat 0% 0%;width:680px;height:455px;}
+.Diagnosis02 img{margin:0;padding:0;}
+.Diagnosis02 ul{clear:both;float:left;padding:0;margin-left:20px;margin-top:5px;margin-bottom:5px;}
+.Diagnosis02 li{float:left;display:inline-block;list-style:none;margin-left:50px;}
+.Diagnosis02 h3{clear:both;font-size:18px;color:#222;padding-top:175px;padding-left:70px;}
+.Diagnosis02 h3.qna{clear:both;margin:0;background:url(../img/safetyfoodlife/Diagnosis_icon01.png) no-repeat 25px 170px;}
+.Diagnosis02 .box{margin-top:85px;margin-left:25px;padding:15px;width:350px;height:140px;border:1px solid #ececec;border-radius:4px;color:#ececec;background-color:#fff;}
+.Diagnosis02 .box h4{text-align:left;font-size:14px;color:#00a6be;margin-top:0;margin-bottom:10px;line-height:20px;}
+.Diagnosis02 .box p{text-align:left;font-size:13px;color:#222;margin-bottom:0;line-height:20px;font-weight:normal;}
+.Diagnosis03{margin:0;padding:0;background:url(../img/safetyfoodlife/Diagnosis_03.png) no-repeat 0% 0%;width:680px;height:455px;}
+.Diagnosis03  h4{text-align:left;font-size:25px;color:#222;margin-top:0;margin-left:100px;margin-bottom:10px;line-height:40px;padding-top:250px;}
+.Diagnosis04{margin:0;padding:0;background:url(../img/safetyfoodlife/Diagnosis_04.png) no-repeat 0% 0%;width:680px;height:455px;}
+.Diagnosis04  h4{text-align:left;font-size:25px;color:#222;margin-top:0;margin-left:100px;margin-bottom:10px;line-height:40px;padding-top:250px;}
+
+/*======================================
+  Safety Food Life > pack,Sterilization
+========================================*/
+.page-container{border-top:2px solid #424252;padding-top:50px;}
+.page-container > article{margin-top:0;}
+.page-container .bs-callout, .bs-callout{padding:20px;margin-bottom:50px;border:1px solid #eee;border-left-width:5px;border-radius:3px;}
+.page-container .bs-callout-info, .bs-callout-info{border-left-color:#0070bd;}
+.page-container .bs-callout-danger, .bs-callout-danger{border-left-color:#FD0000;}
+.page-container .bs-callout p,.bs-callout p{margin:0;padding:0;line-height:20px;}
+.page-container h2{font-size:25px;color:#0070bd;margin:50px 0 30px 0;line-height:35px;}
+.page-container > article > h2:first-child{margin-top:0;}
+.page-container h3{font-size:17px;color:#222;margin-bottom:20px;line-height:30px;}
+.page-container p{font-size:15px;color:#222;margin-bottom:30px;line-height:20px;}
+.page-container img{margin:0;}
+.page-container fieldset,fieldset{margin:0;padding:0;width:100%;}
+.emphasis{padding:20px;margin-bottom:30px;border:1px solid #faebcc;border-radius:4px;color:#8a6d3b;background-color:#fcf8e3;}
+.page-container .pack-box{margin-top:32px;padding:25px;border:1px solid #ececec;border-radius:4px;color:#ececec;background-color:#f8f8f8;}
+.page-container .pack-box .block{float:left;padding:0;margin-left:15px;margin-bottom:3px;width:600px;}
+.page-container .pack-box ul{float:left;padding:0;margin:0;list-style:none;}
+.page-container .pack-box ul li{background:none;padding:0;}
+.page-container .pack-box img{margin:0;}
+.page-container .pack-box .space{clear:both;float:left;padding:0;margin-left:20px;width:425px;}
+.page-container .pack-box .space h1{clear:both;padding-left:20px;margin:0;line-height:20px;color:#222;font-size:14px;text-align:left;}
+.page-container .pack-box .space h1.bullet{clear:both;float:left;background:url(../img/common/list_icon_01.gif) no-repeat 0 3px;}
+.page-container .pack-box .space p{clear:both;padding-left:20px;margin:0;line-height:20px;color:#222;font-size:15px;text-align:left;font-weight:normal;}
+.page-container .box02{border:1px solid #ececec;color:#ececec;background-color:#f8f8f8;}
+.page-container .pack-box:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*======================================
+  Healthy Food Life > Food Nutrition DB
+========================================*/
+/* Layer Common */
+.info-container{margin-top:20px;}
+.info-container dl:first-child{margin-top:30px;}
+.info-container dl{border-bottom:1px solid #D7D7D7;margin-bottom:8px;}
+.info-container dl dt,.info-container dl dd{float:left;display:inline-block;margin-bottom:8px;}
+.info-container dl dt{width:120px;text-align:left;padding-left:10px;}
+.info-container dl dd{width:680px;text-align:left;padding-left:10px;}
+.info-container dl.half{float:left;width:385px;}
+.info-container dl.half:nth-child(even){float:right;width:385px;}
+.info-container dl.half dd{float:left;width:265px;}
+.info-container dl.half.fr{float:right;margin-right:0;}
+.info-container:after,.info-container dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both}
+.tab .label{font-style:normal;}
+.scroll-container{height:570px;overflow:hidden;border:none;}
+.scroll-container table.select{margin-top:-2px;}
+.inner-head .search-container{margin:0;padding:0;border:none;}
+#inner-view .list-container table{width:100%;max-width:100%;margin-top:-1px;}
+#inner-view .list-container{border:none;margin-top:-2px;}
+#inner-view .board-footer{text-align:center;margin-bottom:0;}
+/* Common */
+.nutrition article ul{padding-left:15px;}
+.nutrition table th,.nutrition table td{border-right:1px solid #D7D7D7;padding:10px;}
+.nutrition table thead th:last-child,.nutrition table tfoot th:last-child,.nutrition table td:last-child{border-right:none;}
+.nutrition table tbody td{color:#5E6068 !important;}
+.nutrition table tbody th,.nutrition table tfoot td{background:#FBFBFB;}
+.nutrition table.src td{vertical-align:top;}
+.nutrition table.food-result td,.nutrition table.nutrition-result td,.nutrition table.cook-result td{text-align:center;}
+.nutrition table.food-result td a,.nutrition table.nutrition-result td a,.nutrition table.cook-result td a{font-weight:bold;}
+.nutrition-search-container{border:1px solid #D7D7D7;border-radius:4px 4px 0 0;padding:20px 0 10px 20px}
+.re-search-container{border:1px solid #D7D7D7;padding:0 0 10px 20px;margin-top:-1px;}
+.nutrition-search-container input[type=text]{height:36px;width:210px;border:1px solid #D7D7D7;border-radius:4px;}
+.re-search-container input[type=text]{height:36px;width:95px;border:1px solid #D7D7D7;border-radius:4px;}
+.re-search-container h3{font-size:15px;margin:20px 0 10px 0;}
+.nutrition-btn{border:1px solid #D7D7D7;border-radius:0 0 4px 4px;margin-top:-1px;margin-bottom:30px;text-align:center;background:#F6F6F6;padding:20px;}
+.nutrition-search-container .btn-default{padding:7px 17px;}
+.nutrition-btn .btn-default{padding:7px 20px;}
+.nutrition-search-container dd,.nutrition-search-container dt,.re-search-container dd,.re-search-container dt{float:left;display:inline-block;}
+.nutrition-search-container dt,.re-search-container dt{width:95px;padding-top:10px;}
+.nutrition-search-container dt label,.re-search-container dt label{position:static;visibility:visible;text-indent:0;}
+.nutrition-search-container dd,.re-search-container dd{width:210px;margin-bottom:10px;}
+.nutrition-search-container dd:nth-child(even),.re-search-container dd:nth-child(even){margin-right:24px;}
+.nutrition-search-container dd.full{width:545px;margin-right:0;}
+.nutrition-search-container dd .select-container,.re-search-container dd .select-container{display:inline-block;margin-right:9px;}
+.nation-search{background:url(../img/healthyfoodlife/btn-search.png) no-repeat 50% 50%;width:25px;height:25px;text-indent:-99999px;position:absolute;margin-left:180px;margin-top:-31px;z-index:1;}
+.nutrition-search-container:after,.re-search-container:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+table.nutrition-info{margin:-1px 0 0 0;}
+table.nutrition-info th,table.nation th{font-size:12px;}
+table.nutrition-info td,table.nation td{text-align:center;font-size:15px;}
+table.nation td{font-style:normal;padding:6px 5px}
+table.nutrition-info tbody tr:hover td,table.nation tbody tr:hover td{cursor:auto;}
+table.nutrition-info tr td:last-child{color:#000;font-size:15px;text-align:right !important;font-weight:normal;padding-right:10px;}
+table.nutrition-info td.num{font-size:11px;padding:15px 5px;line-height:15px;text-align:center;font-weight:normal;color:#9797A6;}
+/* nation search */
+table.nation{margin:0 0 20px 0;}
+.inner-head.origin h1{padding-top:15px !important;}
+/* DB Search */
+.nutrition article ul#tabs,.nutrition article .search-container ul{padding-left:0;}
+.nutrition article .search-container label{visibility:visible;line-height:40px;text-indent:0;position:static;margin:0 17px;}
+.nutrition article .search-container li:first-child label{margin:0 16px 0 0;}
+table.basic th{font-size:12px !important;padding:5px !important;line-height:20px !important;}
+table.basic tbody th{font-weight:normal;}
+table.basic tbody th a{font-weight:bold;color:#000;}
+table.basic tbody th a:hover{font-weight:bold;color:#0070bd;}
+table.basic td{font-size:11px !important;padding:7px 5px !important;line-height:15px;text-align:center;font-weight:normal;color:#9797A6;}
+.nutrition table tbody tr:hover{cursor:auto;}
+.page-container .info-container{border-top:1px solid #D7D7D7;padding-top:15px;}
+.page-container h2 .label{font-style:normal;font-size:12px;margin:6px 0 0 5px;display:inline-block;position:absolute;}
+.nutrition-info.table-hover{margin-bottom:30px;}
+.img-meal{position:absolute;z-index:1;background:#FFF;text-align:center;width:220px;height:200px;margin-left:460px;margin-top:-15px;}
+.img-meal img{margin-bottom:20px !important;}
+.scroll-x{width:680px;overflow:auto;margin-bottom:30px;}
+.scroll-x .no-data{width:680px;}
+.scroll-x table{width:1680px;margin:0;}
+.scroll-x table.cook-result{width:1080px;margin:0;}
+.scroll-x tr td:nth-child(4){font-size:13px !important;font-family:'맑은고딕',Malgun Gothic,Arial,Helvetica,sans-serif !important;text-align:left;}
+.scroll-x tr td:nth-child(3),.scroll-x tr td:nth-child(15),.scroll-x tr td:nth-child(18){font-size:12px !important;font-family:'맑은고딕',Malgun Gothic,Arial,Helvetica,sans-serif !important;}
+.src-info{background:url(../img/healthyfoodlife/btn-info.png) no-repeat;width:16px;height:16px;display:inline-block;margin-left:5px;text-indent:-99999px;}
+.selecter.multiple,.selecter.multiple .selecter-options{max-height:106px;height:106px;}
+.nutrition.select label{visibility:visible;text-indent:0;line-height:20px;font-weight:normal !important;}
+.nutrition.select ul,.nutrition .emphasis ul{list-style:none;margin:0;padding:0;}
+.page-container.nutrition .emphasis ul, .page-container.nutrition .emphasis ul:first-child{padding:0 !important;font-size:12px;}
+.nutrition.select ul li,.nutrition .emphasis ul li{float:left;display:inline-block;width:33.333333%;}
+.page-container.nutrition .emphasis h3{margin-top:0 !important;}
+.nutrition.select th,.nutrition.select td,.nutrition.select td:last-child{text-align:left !important;padding:10px 15px !important;}
+.nutrition.select th input[type=checkbox],.nutrition.select td input[type=checkbox]{margin-right:5px;}
+.nutrition.select th{white-space:nowrap;}
+.nutrition .search-container > .total{padding-top:17px !important;}
+.nutrition.select:after,.nutrition .emphasis:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+input[type=checkbox].check{display:none}
+input[type=checkbox].check + label.check-label{display:inline-block;height:24px;width:24px;background-repeat:no-repeat;cursor:pointer;text-indent:-99999px;margin-top:-9px;}
+input[type=checkbox].check:checked + label.check-label{background-position:0 -24px}
+label.check-label{background-image:url(../img/healthyfoodlife/btn-check.png);visibility:visible;position:static;}
+/*
+article h2 ul,.health:not(ul.ul-list){list-style:none;padding:0;border:1px solid #D7D7D7;background:#F6F6F6;text-align:center;border-radius:4px;padding:15px 0;}
+article h2 ul li,.health:not(ul.ul-list li){display:inline-block;}
+*/
+article h2 ul,.health {list-style:none;padding:0;border:1px solid #D7D7D7;background:#F6F6F6;text-align:center;border-radius:4px;padding:15px 0;}
+article h2 ul li,.health {display:inline-block;}
+article h2 ul li:first-child{margin-right:5px;}
+article h2 ul li .btn{padding:8px 20px;}
+/*
+article h2 + ul,.health:not(ul.ul-list){list-style:none;padding:0;border:1px solid #D7D7D7;background:#F6F6F6;text-align:center;border-radius:4px;padding:15px 0;}
+article h2 + ul li,.health:not(ul.ul-list li){display:inline-block;}
+article h2 + ul li:first-child{margin-right:5px;}
+article h2 + ul li .btn{padding:8px 20px;}
+*/
+.search-container + .total,h3 + .total{display:block;float:none;margin-top:-20px;margin-bottom:10px;}
+/* Data Stats */
+.left-section{float:left;display:inline-block;width:470px;}
+.left-section tbody th{text-align:left;}
+.right-section{float:right;display:inline-block;width:500px;border:1px solid #D7D7D7;text-align:center;}
+form + h2{margin-top:0 !important;}
+article h2 + .total{display:block;float:none;margin-top:-30px;margin-bottom:10px;}
+/* Healthy Functional Food - Domestic */
+article form + .total{display:block;float:none;margin-top:-30px;margin-bottom:10px;}
+.nutrition-container > table.nutrition{margin-top:20px;clear:both;width:100%;border-top:1px solid #0070bd;margin-bottom:30px;border-collapse:collapse;}
+.nutrition-container > table.nutrition caption{overflow:hidden; width:1px; height:1px; color:rgba(255,255,255,0); position: absolute; display: block;}
+.nutrition-container > table.nutrition th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;font-size:13px;color:#000;text-align:center;padding:15px 5px;line-height:20px;font-weight:bold;border-collapse:collapse}
+.nutrition-container > table.nutrition td{border-bottom:1px solid #D7D7D7;font-size:13px;padding:12px 5px;line-height:20px;text-align:center;font-weight:normal;color:#000;border-collapse:collapse}
+.nutrition-container > table.nutrition th,.nutrition-container > table.nutrition td{text-align:center;font-size:13px;border-right:1px solid #D7D7D7;}
+.nutrition-container > table.nutrition tbody tr:hover td{cursor:auto;}
+.nutrition-container > table.nutrition tr th:last-child,.nutrition-container > table.nutrition tr td:last-child{border-right:none;text-align:center !important;}
+.nutrition-container > table.nutrition td.num{font-size:11px;padding:15px 5px;line-height:15px;text-align:right;font-weight:normal;color:#9797A6;}
+.nutrition-container + h3{font-size:15px;}
+.nutrition-container + h3 + .emphasis > p{margin-bottom:0;}
+
+/*============================================
+  healthy-food-life > Calorie Dic
+==============================================*/
+.nutrtion-search{border:1px solid #D7D7D7;border-radius:5px;margin:0;padding:20px;text-align:center;background:#F6F6F6;margin-bottom:20px}
+.nutrtion-search ul{margin:0;padding:0;list-style:none;}
+.nutrtion-search ul li{float:left;margin-right:10px;}
+.nutrtion-search ul li:last-child{margin-right:0;}
+.nutrtion-search .btn{height:38px;}
+.nutrtion-search input#nutrition-keyword{height:38px;line-height:38px;width:150px;border:1px solid #D7D7D7;border-radius:3px;padding:0 7px;}
+.btn-group label,.btn-group-vertical label{visibility:visible !important;text-indent:0 !important;overflow: visible;
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    color:#111;}
+.total-container-2 .total{margin:0 0 10px 0;padding:0;}
+table.calorie tbody tr:hover td{background:#F6F6F6;cursor:pointer;}
+table.calorie td{text-align:center;}
+table.calorie td a{color:#000;}
+table.calorie td a:hover{color:#0070bd;}
+table.calorie td.tl{font-weight:bold;}
+table.calorie td.num{font-size:11px;padding:15px 5px;line-height:15px;text-align:center;font-weight:normal;color:#9797A6;}
+table.nation td.num{font-size:11px;padding:6px 5px;line-height:15px;text-align:center;font-weight:normal;color:#9797A6;}
+table.nutrition{margin-top:20px;}
+table.nutrition th{font-size:12px;}
+table.nutrition td{text-align:center;font-size:13px;}
+table.nutrition tbody tr:hover td{cursor:auto;}
+table.nutrition tr td:last-child{color:#000;font-size:13px;text-align:right !important;font-weight:normal;padding-right:10px;}
+table.nutrition td.num{font-size:11px;padding:15px 5px;line-height:15px;text-align:center;font-weight:normal;color:#9797A6;}
+table th .sort{display:inline-block;background:url(../img/common/sort-descend.gif) no-repeat right 50%;width:12px;height:20px;text-indent:-99999px;}
+table th .sort.ascend{background:url(../img/common/sort-ascend-active.gif) no-repeat right 50%;}
+table th .sort.descend{background:url(../img/common/sort-descend-active.gif) no-repeat right 50%;}
+table .btn-check:hover{background-position:50% -24px;}
+table .btn-check{background:url(../img/healthyfoodlife/btn-check.png) 50% 0;display:block;height:24px;width:24px;background-repeat:no-repeat;cursor:pointer;text-indent:-99999px;margin:0 auto;text-align:left;}
+
+/*============================================
+  healthy-food-life > Calorie Calculator
+==============================================*/
+.calorie-search{border:1px solid #D7D7D7;border-bottom:none;border-top-left-radius:5px;border-top-right-radius:5px;margin:0;padding:0;text-align:center;background:#FFF;margin-bottom:0;}
+.calorie-search .col-3{width:33.3333333%;float:left;display:inline-block;}
+.calorie-search .col-3:first-child h4{border-top-left-radius:5px;}
+.calorie-search .col-3:first-child + .col-3{border-right:1px solid #D7D7D7;border-left:1px solid #D7D7D7;}
+.calorie-search .col-3:last-child h4{border-top-right-radius:5px;}
+.calorie-search .col-3 h4{margin:0;text-align:center;border-bottom:1px solid #D7D7D7;padding:10px 20px;font-size:15px;background:#F6F6F6; color:#0070bd;}
+.calorie-search .col-3 dl{padding:20px 20px 10px;margin:0;}
+.calorie-search .col-3 dl input{height:38px;width:115px;border:1px solid #D7D7D7;border-radius:3px;padding:0 7px;}
+.calorie-search .col-3 dl label{visibility:visible !important;text-indent:0 !important;overflow: visible;
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    color:#111;}
+.calorie-search .col-3 dl label input{width:55px;}
+.calorie-search .col-3 dl dt,.calorie-search .col-3 dl dd{float:left;display:inline-block;margin-bottom:10px;}
+.calorie-search .col-3 dl dt{clear:both;float:left;width:68px;text-align:left;padding-top:20px;}
+.calorie-search .col-3 .btn-default{padding:9px 15px;}
+.calorie-search:after,.calorie-search .col-3 dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+#searchForm .btn-block{padding:20px;border-top-left-radius:0;border-top-right-radius:0;background:#F6F6F6;margin-bottom:30px;}
+#searchForm .btn-block:hover{background-color:#e6e6e6;}
+
+/*============================================
+  healthy-food-life > BMI Calculator
+==============================================*/
+.bmi-search{border:1px solid #D7D7D7;border-bottom:none;border-top-left-radius:5px;border-top-right-radius:5px;margin:0;padding:0;text-align:center;background:#FFF;margin-bottom:0;}
+.bmi-search .col-3{width:33.3333333%;float:left;display:inline-block;}
+.bmi-search .col-3:first-child h3{border-top-left-radius:5px;}
+.bmi-search .col-3:first-child + .col-3{border-right:1px solid #D7D7D7;border-left:1px solid #D7D7D7;}
+.bmi-search .col-3:last-child h3{border-top-right-radius:5px;}
+.bmi-search .col-3 h3{margin:0;text-align:center;border-bottom:1px solid #D7D7D7;padding:10px 20px;font-size:15px;background:#F6F6F6;}
+.bmi-search .col-3 dl{padding:20px 20px 10px;margin:0;}
+.bmi-search .col-3 dl input{height:38px;width:115px;border:1px solid #D7D7D7;border-radius:3px;padding:0 7px;}
+.bmi-search .col-3 dl input[readonly]{border:1px solid #F90;}
+.bmi-search .col-3 dl label{visibility:visible !important;text-indent:0 !important;     overflow: visible;
+    width: auto;
+    height: auto;
+    display: block;
+    position: relative;
+    color:#111;
+    }
+.bmi-search .col-3 dl label input{width:55px;}
+.bmi-search .col-3 dl dt,.bmi-search .col-3 dl dd{float:left;display:inline-block;margin-bottom:10px;}
+.bmi-search .col-3 dl dt{clear:both;float:left;width:68px;text-align:left;padding-top:20px;}
+.bmi-search .col-3 .btn-default{padding:9px 15px;}
+.bmi-search .col-3 dl dd.dfull{width:183px;}
+.bmi-search .col-3 dl dd.ddfull > input{width:183px;}
+.bmi-search .col-3 dl dd.ddfull > .btn-default{width:183px;height:35px !important;line-height:5px;margin-bottom:0 !important;border-radius:3px !important;padding:18px !important;}
+.bmi-search:after,.bmi-search .col-3 dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+h2 span,h3 span{display:inline-block;float:right;font-size:11px;font-weight:normal;color:#9797A6;}
+h2:after,h3:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+table.bmi{margin:10px 0;}
+table.bmi thead th{padding:7px;}
+table.bmi tbody th,table.bmi td{text-align:center;font-size:12px;background:#FFF;padding:7px;}
+table.bmi th,table.bmi td{border-right:1px solid #D7D7D7;}
+table.bmi thead tr th:last-child,table.bmi tr td:last-child{border-right:none;}
+th.overweight,td.overweight,.overweight{background:#ECCE6F !important;color:#9C721A !important;}
+th.obesity,td.obesity,.obesity{background:#FB985B !important;color:#B23000 !important;}
+table.bmi tbody tr:hover td{cursor:auto;}
+table.bmi th span{font-size:11px;padding:2px;font-weight:normal;}
+
+/*============================================
+  healthy-food-life > My Nutrition Management
+==============================================*/
+.dashboard{border:1px solid #D7D7D7;border-radius:4px;margin-top:30px;}
+.dashboard .date,.dashboard .calorie{width:33.33333%;border-right:1px solid #D7D7D7;float:left;display:inline-block;height:100px;text-align:center;position:relative;}
+.dashboard .block{width:100%;}
+.dashboard > div:last-child{border-right:none;border-radius:4px 4px 0 0;}
+.dashboard > div:first-child{border-radius:4px 0 0 4px;background:#F6F6F6;}
+.dashboard .date .year-month,.dashboard .week .year-month{position:relative;font-size:15px;color:#868695;margin-top:65px;}
+.dashboard .date .day,.dashboard .week .day{position:relative;font-size:50px;color:#0070bd;font-weight:bold;margin-top:-55px;}
+.dashboard .date a.prev{background:url(../img/healthyfoodlife/btn-date-nav.png) no-repeat 0 0;width:20px;height:40px;text-indent:-99999px;position:absolute;top:30px;left:86px;}
+.dashboard .date a.next{background:url(../img/healthyfoodlife/btn-date-nav.png) no-repeat -20px 0;width:20px;height:40px;text-indent:-99999px;position:absolute;top:30px;left:222px;}
+.dashboard .week a.prev{background:url(../img/healthyfoodlife/btn-date-nav.png) no-repeat 0 0;width:20px;height:40px;text-indent:-99999px;position:absolute;margin:30px 0 0 -220px}
+.dashboard .week a.next{background:url(../img/healthyfoodlife/btn-date-nav.png) no-repeat -20px 0;width:20px;height:40px;text-indent:-99999px;position:absolute;margin:30px 0 0 35px;}
+.dashboard a.prev:hover{background-position:0 -40px;}
+.dashboard a.next:hover{background-position:-20px -40px;}
+.dashboard .calorie .t-cal{position:relative;font-size:15px;color:#868695;margin-top:65px;}
+.dashboard .calorie .data-cal{position:relative;font-size:50px;color:#0070bd;font-weight:bold;margin-top:-55px;}
+.dashboard .week ul{margin:0 auto;padding:0 !important;list-style:none;width:170px;height:100px;}
+.dashboard .week ul li{float:left;display:inline-block;text-align:center;}
+.dashboard .week ul li span{display:block;width:40px;text-align:center;line-height:100px;font-size:20px;color:#868695;font-weight:bold;}
+.dashboard:after,.dashboard .week:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.dashboard + h3,.board-footer + h3{margin-bottom:0;padding-bottom:12px;border-bottom:2px solid #424252;}
+.search-container label.btn{height:37px;padding:9px 10px;line-height:19px;}
+.my-nutrition .search-container li > label{visibility:visible;text-indent:0;line-height:39px;position:static;margin-right:20px;}
+.my-nutrition .search-container li:first-child + li{margin-right:30px;}
+.my-nutrition .search-container li:first-child + li + li + li + li{margin-right:5px;}
+.my-nutrition .search-container li:first-child + li + li + li input[type=text]{width:222px;}
+.my-nutrition .search-container li:last-child{margin-right:0;}
+.my-nutrition .nutrition-result tbody tr:hover{cursor:auto;}
+.my-nutrition .nutrition-result td > span{font-family:'맑은고딕',Malgun Gothic;font-weight:bold;font-size:12px;color:#000;}
+.my-nutrition .nutrition-result tr td:first-child + td{text-align:left;font-family:'맑은고딕',Malgun Gothic;}
+.my-nutrition .meal tr td:first-child{font-family:'맑은고딕',Malgun Gothic;font-size:12px;color:#424252;}
+.my-nutrition .meal tr td:first-child + td + td + td,.my-nutrition .my-meals tr td:first-child + td + td + td,.my-nutrition .action tr td:first-child + td + td,.my-nutrition .my-actiontd:first-child + td + td + td{font-weight:bold;color:#0070bd;}
+.btn-del{width:16px;height:16px;text-indent:-9999px;background:url(../img/healthyfoodlife/btn-del.png) no-repeat;display:inline-block;margin:4px 0 4px 4px;}
+.btn-edit{width:16px;height:16px;text-indent:-9999px;background:url(../img/healthyfoodlife/btn-edit.png) no-repeat;position:absolute;margin:0 0 0 4px;text-align:left;}
+.btn-ok{width:16px;height:16px;text-indent:-9999px;background:url(../img/healthyfoodlife/btn-ok.png) no-repeat;position:absolute;margin:2px 0 0 4px;text-align:left;}
+.my-nutrition .my-meals td input[type=text]{width:40px;padding-right:3px;text-align:right;border-radius:3px;color:#333;border:1px solid #D7D7D7;height:20px;}
+.my-nutrition .my-meals td:first-child + td + td,.my-nutrition .my-action td:first-child + td + td{text-align:right;padding-right:25px !important;}
+.my-nutrition .my-meals td:first-child,.my-nutrition .action td:first-child,.my-nutrition .my-action td:first-child{font-size:11px;color:#9797A6;}
+.my-nutrition .my-action a.btn-ok{margin:-21px 0 0 4px;text-align:left;}
+.my-nutrition .my-action .select-container > .selecter .selecter-selected{display:inline-block;line-height:19px;padding:0 5px;font-size:11px;}
+.my-action + p{display:block;margin-top:-10px;text-align:right;}
+.sub-tab{list-style:none;margin:0;padding:15px 0 0 0;margin-left:350px;}
+.sub-tab li{float:left;display:inline-block;padding:0 15px;border-right:1px solid #D7D7D7;}
+.sub-tab li:last-child{border-right:none;}
+.sub-tab li a{color:#424252;}
+.sub-tab li a:hover,.sub-tab li.active a{color:#0070bd;}
+.graph-container{border:1px solid #D7D7D7;border-radius:4px 4px 0 0;border-bottom:none;padding:30px;margin-top:30px;}
+.graph-container .kcal,.graph-container .kg{float:left;display:inline-block;text-align:right;width:50px;margin-top:130px;font-size:18px;color:#646472;}
+.graph-container .kcal span,.graph-container .kg span{font-size:13px !important;display:block;font-weight:normal;}
+.graph-container .graph{float:right;display:inline-block;width:560px;background:url(../img/healthyfoodlife/bg-graph-01.png) no-repeat 0 0;}
+.graph-container .y-axis{position:absolute;float:left;display:inline-block;text-align:right;width:50px;font-size:18px;font-weight:bold;color:#646472;line-height:30px;margin:-15px 0 0 0;padding:0 !important;list-style:none;}
+.graph-container .action-time{background:url(../img/healthyfoodlife/bg-graph-02.png) no-repeat 0 0;}
+.graph ul{margin:0;padding:0;}
+.graph ul li{float:left;display:inline-block;width:80px;text-align:center;font-size:30px;font-weight:bold;line-height:30px;padding-top:310px;}
+.graph ul li span{font-size:13px;font-family:'맑은고딕',Malgun Gothic;font-weight:normal;display:block;}
+.graph ul li div{width:25px;margin:auto;position:absolute;margin-top:-220px;margin-left:27px;}
+.graph.action-time ul li div{width:25px;margin:auto;position:absolute;margin-top:-70px;margin-left:27px;}
+.graph ul li div span{background-color:#0070bd;text-align:left;text-indent:-999999px;width:25px;position:absolute;bottom:0;}
+.graph ul li div span.minus{background-color:#0070bd;text-align:left;text-indent:-999999px;width:25px;position:absolute;top:0;}
+.graph ul li.sun{color:#FD0000;}
+.graph ul li.sat{color:#4DA6FF;}
+.my-nutrition .comment{border:1px solid #D7D7D7;padding:20px;border-radius:0 0 4px 4px;background:#F6F6F6;}
+.my-nutrition .comment p:first-child{margin-bottom:0;}
+.graph-container ul,.comment ul{padding:0 !important;margin:0;list-style:none;display:block;}
+.comment p + ul{margin-top:15px;}
+.graph-container.nutrition ul ul > li,.comment > ul > li{float:left;display:inline-block;height:30px;}
+.graph-container.nutrition > ul{margin-bottom:30px;}
+.graph-container.nutrition > ul:last-child{margin-bottom:0;}
+.graph-container.nutrition > ul > li:first-child{float:left;display:inline-block;font-weight:bold;}
+.graph-container.nutrition > ul > li:first-child + li{float:right;display:inline-block;text-align:right;font-size:20px;}
+.graph-container.nutrition > ul > li:first-child + li span{font-size:13px;}
+.graph-container.nutrition > ul > li:first-child + li + li{clear:both;height:30px;width:100%;}
+.graph-container.nutrition > ul > li:first-child + li + li + li{clear:both;color:#747484;width:100%;margin-top:10px;}
+.graph-container .now{position:absolute;display:block;margin-left:-3px;background:url(../img/healthyfoodlife/graph-now.png) no-repeat 0 0;width:624px;height:14px;text-indent:-99999px;z-index:1;}
+.comment > ul > li{margin-right:20px;height:35px;font-weight:bold;}
+.type01{background:url(../img/healthyfoodlife/graph-01.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type02{background:url(../img/healthyfoodlife/graph-02.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type03{background:url(../img/healthyfoodlife/graph-03.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type04{background:url(../img/healthyfoodlife/graph-04.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type05{background:url(../img/healthyfoodlife/graph-05.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type06{background:url(../img/healthyfoodlife/graph-06.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type07{background:url(../img/healthyfoodlife/graph-07.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type08{background:url(../img/healthyfoodlife/graph-08.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type09{background:url(../img/healthyfoodlife/graph-09.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type10{background:url(../img/healthyfoodlife/graph-10.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type11{background:url(../img/healthyfoodlife/graph-11.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type12{background:url(../img/healthyfoodlife/graph-12.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type13{background:url(../img/healthyfoodlife/graph-13.png) repeat-x 0 bottom;padding-bottom:15px;}
+.type14{background:url(../img/healthyfoodlife/graph-14.png) repeat-x 0 bottom;padding-bottom:15px;}
+#tab4 h3 + span{display:block;margin:-15px 0 20px 0;color:#0070bd;}
+.my-info{padding:20px 0 0 0!important;}
+.my-info dl{border-bottom:1px solid #D7D7D7;padding-bottom:10px;}
+.my-info dl:not(:first-child) dt{line-height:8px;}
+.my-info dl:last-child{border-bottom:none;padding-bottom:10px;margin-bottom:0;}
+.my-info dl dt:nth-child(odd){padding-left:20px;width:105px;}
+.my-info label{position:static;visibility:visible;text-indent:0;}
+.my-info dd ul{padding:0 !important;margin:0;list-style:none;display:block;line-height:30px;}
+.my-info dd ul.weight li{float:left;display:inline-block;margin-right:20px;}
+.my-info dd ul li label{font-weight:normal !important;}
+.my-info dd ul.weight li:first-child,.my-info dd ul.weight li:first-child + li + li + li,.my-info dd ul.weight li:first-child + li + li + li + li + li{clear:both;width:60px;float:left;display:inline-block;}
+.my-info dd ul li{padding:0 !important;margin:0;list-style:none;display:block;line-height:30px;}
+.my-bmi > div{float:left;display:inline-block;width:25%;border-right:1px solid #D7D7D7;height:100px;text-align:center;}
+.my-bmi > div .t-cal,.my-bmi > div .data-cal span{position:relative;font-size:15px;color:#868695;margin-top:65px;font-weight:normal;font-family:'맑은고딕',Malgun Gothic;}
+.my-bmi > div .data-cal{position:relative;font-size:30px;color:#0070bd;font-weight:bold;margin-top:-55px;}
+.sub-tab:after,.graph-container:after,.graph-container ul:after,.graph-container ul ul:after,.comment ul:after,.my-info dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+/* My Menu Management */
+.my-menu article > h3:first-child,.my-label article > h3:first-child{margin-top:0;}
+.my-menu .search-wrap li:last-child,.my-meals .search-wrap li:last-child,.my-label .search-wrap li:last-child{margin-left:5px;}
+.my-menu table td,.my-meals table td,.my-label table td{text-align:center;}
+.my-menu table td a,.my-meals table td a,.my-label table td a{font-weight:bold;}
+.my-menu table td a.btn-edit,.my-menu table td a.btn-del,.my-meals table td a.btn-edit,.my-meals table td a.btn-del,.my-label table td a.btn-edit,.my-label table td a.btn-del{position:static;display:inline-block;}
+.menu-list td{border-right:1px solid #D7D7D7;vertical-align:top;}
+.menu-list tr td:last-child{border-right:none;}
+.menu-list ul{padding:0 !important;margin:0;list-style:none;display:block;height:190px;}
+.menu-list ul li{margin-bottom:10px;}
+.menu-list ul li:last-child{margin-bottom:0;}
+.menu-list ul li.img{background-position:50% 0;background-repeat:no-repeat;height:95px;overflow:hidden;margin-bottom:0;background-size:120px;-ms-behavior:url(/css/backgroundsize.min.htc);}
+.menu-list ul li span{font-size:11px;color:#9797A6;line-height:15px;display:block;}
+.list-container table.my-menu-list tbody tr:hover{cursor:auto;}
+.btn-bottom .btn-sm{font-size:11px;padding:5px;}
+.btn-bottom .btn-bf, .btn-bf{background-color:#F9979A;}
+.btn-bottom .btn-lc, .btn-lc{background-color:#A2CB63;}
+.btn-bottom .btn-dn, .btn-dn{background-color:#FFD424;}
+.btn-bottom .btn-ds, .btn-ds{background-color:#EEEEEE;}
+.btn-bottom .btn-sm:hover{color:#000;}
+.my-menu-list th,.my-menu-list td{border-right:1px solid #D7D7D7;}
+.my-menu-list thead th:last-child,.my-menu-list td:last-child{border-right:none;}
+.my-menu-list tfoot td{background:#FCFCFC;}
+.my-menu-list tbody td:not(:first-child),.my-menu-list tfoot td{text-align:right;font-size:11px;padding:15px 5px;line-height:15px;font-weight:normal;color:#9797A6;}
+.my-menu-list ul{padding:0 !important;margin:0;list-style:none;display:block;}
+.my-menu-list ul li.img{background-position:50% 0;background-repeat:no-repeat;height:95px;overflow:hidden;margin-bottom:0;background-size:120px;-ms-behavior:url(/css/backgroundsize.min.htc);}
+.my-menu-list a.btn-del{position:absolute !important;margin:-7px 0 0 36px;}
+.my-menu-list{margin-bottom:0 !important;}
+.my-menu-list:last-child{margin-bottom:30px !important;}
+.my-menu-list:first-child{border-top:2px solid #0070bd;margin-top:-2px;}
+.dashboard.ratio{border:1px solid #0070bd;}
+.ratio > div{float:left;display:inline-block;width:33.3333%;border-right:1px solid #0070bd;height:100px;text-align:center;background:#FFF !important;}
+.ratio > div:first-child{border-radius:4px 0 0 4px;}
+.ratio > div:last-child{border-radius:0 4px 4px 0;}
+.ratio > div .n-title{position:relative;font-size:15px;color:#868695;margin-top:24px;font-weight:normal;font-family:'맑은고딕',Malgun Gothic;}
+.ratio > div .n-data{position:relative;font-size:30px;color:#0070bd;font-weight:bold;}
+.ratio > div .n-data span{position:relative;font-size:15px;margin-top:65px;font-weight:normal;}
+.inner-body dl.weight{margin-top:20px;padding-bottom:20px;}
+.inner-body dl.weight > dt{width:80px;line-height:37px;margin:0;}
+.inner-body dl.weight > dt:first-child + dd + dt,.inner-body dl.weight > dt:first-child + dd + dt + dd{margin:10px 0;}
+.inner-body dl.weight > dd{width:400px;line-height:37px;}
+.inner-body dl.weight ul{padding:0 !important;margin:0;list-style:none;display:block;width:230px;}
+.inner-body dl.weight li input[type=text]{margin:5px 0;width:50px;line-height:28px;text-align:right;border:1px solid #0070bd;border-radius:4px;padding:0 5px;height:30px;}
+.inner-body dl.weight li input[disabled]{background:#F6F6F6;border:1px solid #D7D7D7;color:#9797A6;}
+.inner-body dl.weight .btn-group .btn{font-size:12px;padding:8px 13px;}
+.inner-body dl.weight .btn-group-vertical{float:left;margin-right:20px;}
+.inner-body dl.weight .btn-group-vertical + ul{float:left;}
+.inner-body dl.weight dl dt{clear:none;width:50px;float:left;margin-top:12px;}
+.inner-body dl.weight dl dd{clear:none;width:80px;float:left;}
+.inner-body dl.weight dl dt:nth-child(4n+1){clear:both;float:left;}
+.inner-body dl.weight dl dd:nth-child(4n+2){width:50px;margin-top:12px;color:#0070bd;}
+.my-menu-edit{margin-top:-30px;}
+.my-menu-edit ul{padding:0 !important;margin:0;list-style:none;display:block;}
+.my-menu-edit ul li{float:left;margin-right:5px;}
+.my-menu-edit ul li .btn{padding:8px 20px;}
+.my-menu-edit:after,.inner-body dl.weight:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.page-container .my-menu-edit + h3{padding-bottom:0;border:none;margin-bottom:-15px;}
+.page-container .my-menu-edit + h3 span{color:#0070bd;font-weight:bold;float:none;font-size:17px;}
+.dashboard + h3 + .list-container{border:none;}
+h2 textarea{width:680px;height:37px;padding:0;border:1px solid #FFF;overflow:hidden;resize:none;margin-bottom:15px;}
+h2 textarea:hover{border-bottom:1px solid #D7D7D7;}
+#inner-view.my-nutrition .inner-head header{float:left;display:block;}
+#inner-view.my-nutrition .inner-head h1{float:none;margin:5px 0 0 0;line-height:.7em;}
+#inner-view.my-nutrition .inner-head h1 span{font-size:15px;color:#0070bd;margin-bottom:12px;display:block;}
+#inner-view.my-nutrition .inner-head h1 i{font-size:15px;font-style:normal;color:#9797A6;margin-bottom:12px;}
+#inner-view.my-nutrition .inner-head .my-meta{display:block;margin:10px 0 0 0;}
+#inner-view.my-nutrition .inner-head .my-meta span{display:inline-block;margin-left:10px;padding-left:10px;font-size:11px;color:#9797A6;border-left:1px solid #D7D7D7;}
+#inner-view.my-nutrition .inner-head ul{position:absolute;margin-top:45px;padding:0 !important;right:15px;list-style:none;display:block;}
+#inner-view.my-nutrition .inner-head ul.single{margin-top:0;margin-right:30px;}
+#inner-view.my-nutrition .inner-head ul li{margin-left:10px;float:left;}
+#inner-view.my-nutrition .inner-head ul li .btn-default{padding:7px 10px;}
+#inner-view.my-nutrition .inner-head:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+table.my-graph{margin-bottom:0;}
+table.my-graph th{padding:5px;font-size:12px;border-right:1px solid #D7D7D7;}
+table.my-graph td{padding:5px 0;font-size:11px;font-weight:normal;border-right:1px solid #D7D7D7;}
+table.my-graph thead th:last-child,table.my-graph td:last-child{border-right:none;}
+table.my-graph thead tr:nth-child(even) th:last-child,table.my-graph tbody tr:nth-child(even) td:last-child{border-right:1px solid #D7D7D7;}
+table.my-graph td:last-child{text-align:left;}
+table.my-graph td:first-child{text-align:center;}
+table.my-graph td:last-child div{margin-bottom:5px;}
+table.my-graph td:last-child span{display:block;font-weight:bold;font-size:12px;padding-left:10px;}
+table.my-graph tbody tr:hover th,table.my-graph tbody tr:hover td{cursor:auto;}
+table.plan-menu{margin-bottom:10px;}
+table.plan-menu th{padding:7px 5px;font-size:12px;border-right:1px solid #D7D7D7;}
+table.plan-menu td{padding:7px 5px !important;font-size:11px;font-weight:normal;border-right:1px solid #D7D7D7;text-align:right !important;white-space:nowrap;}
+table.plan-menu thead th:last-child,table.plan-menu td:last-child{border-right:none;}
+table.plan-menu tbody th{background:#FBFBFB;font-size:11px;}
+table.plan-menu tbody tr:hover th,table.plan-menu tbody tr:hover td{cursor:auto;}
+tr.fisrt-th th{background:#FFF;color:#0070bd;}
+.mark01{background:#d1ddf0 !important;}
+.mark02{background:#e4eaf9 !important;}
+.mark03{background:#eefbff !important;}
+.btn-close{background:url(../img/common/bt_close.gif);height:16px;width:16px;position:absolute;right:0;top:0;margin-top:15px;margin-right:15px;text-indent:-99999px;}
+/* My Meals Management - 테이블 설정은 나의 식단관리에서 공통 적용 */
+.my-meals table td:nth-child(5){color:#0070bd;}
+.my-meals table td.red{color:#FD0000;}
+.my-meals .ratio > div{float:left;display:inline-block;width:16.66666%;border-right:1px solid #0070bd;height:75px;text-align:center;background:#FFF !important;}
+.my-meals .ratio > div:first-child{border-radius:4px 0 0 4px;}
+.my-meals .ratio > div:last-child{border-radius:0 4px 4px 0;border-right:none;}
+.my-meals .ratio > div .n-title{position:relative;font-size:13px;color:#868695;margin-top:45px;font-weight:normal;font-family:'맑은고딕',Malgun Gothic;}
+.my-meals .ratio > div .n-data{position:relative;font-size:20px;color:#0070bd;font-weight:bold;margin-top:-45px;}
+.my-meals .ratio > div .n-data span{position:relative;font-size:13px;margin-top:50px;font-weight:normal;}
+.my-meals h3 i{font-size:12px;color:#868695;font-weight:normal;font-style:normal;}
+.ingredients-list th,.ingredients-list td{border-right:1px solid #D7D7D7;padding:9px 5px !important;line-height:15px !important;font-size:13px;}
+.ingredients-list th:last-child,.ingredients-list td:last-child{border-right:none;text-align:center;}
+.ingredients-list tbody td,.ingredients-list tfoot td{text-align:right;font-size:11px;font-weight:normal;color:#9797A6;}
+.ingredients-list tbody td:first-child + td{text-align:left;font-size:13px;font-weight:bold;font-family:'맑은고딕',Malgun Gothic;color:#000;}
+.ingredients-list tbody td:first-child{text-align:center;}
+.ingredients-list tbody td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td{font-size:12px;font-family:'맑은고딕',Malgun Gothic;color:#333;text-align:center;}
+.ingredients-list tbody td:first-child + td + td + td + td{color:#9797A6;}
+.ingredients-list a.btn-del{text-align:left;text-indent:-99999px;}
+.ingredients-list{margin-bottom:30px !important;}
+.ingredients-list .btn-del{margin:5px;}
+.new-weight{width:35px;padding-right:5px;text-align:right;}
+.food-nutrition{border:1px solid #D7D7D7;border-top:none;border-bottom:none;padding:17px 20px 10px 20px;}
+.food-nutrition h3{margin:0;color:#0070bd;}
+.food-nutrition h3 + div{margin-top:10px;padding-top:20px;border-top:1px solid #F3F3F3;}
+.food-nutrition div > dl{float:left;display:inline-block;margin-right:20px;width:144px;}
+.food-nutrition div > dl:nth-child(4n+1){clear:both;float:left;display:inline-block;}
+.food-nutrition div > dl:nth-child(4n+4){margin-right:0;}
+.food-nutrition dl dt label{position:static;text-indent:0;visibility:visible;line-height:20px;}
+.food-nutrition dl dd input{padding-right:10px;text-align:right;width:144px;border:1px solid #D7D7D7;border-radius:4px;height:35px;}
+.food-nutrition:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+/* My Label Management - 테이블 설정은 나의 식단관리에서 공통 적용 */
+.my-label .emphasis p:last-child{margin-bottom:0;}
+.my-label .label-process{background:url(../img/healthyfoodlife/process-arrow.png) no-repeat 0 0;width:680px;height:55px;}
+.my-label .label-process.step01{background-position:0 0;}
+.my-label .label-process.step02{background-position:0 -55px;}
+.my-label .label-process.step03{background-position:0 -110px;}
+.my-label .label-process ul{margin:0;padding:0 !important;list-style:none;height:55px;}
+.my-label .label-process ul li{float:left;display:inline-block;width:33.3333%;}
+.my-label .label-process ul li a{display:block;height:55px;line-height:55px;font-weight:bold;font-size:15px;color:#000;text-align:center;}
+.my-label .label-process ul li.active a{color:#FFF;}
+.my-label .my-info dd{width:97px;}
+.my-label .my-info dd input{width:97px;}
+.my-label .my-info dt:nth-child(3),.my-label .my-info dt:nth-child(11){clear:both;float:left;}
+.my-label .my-info dd.full{width:545px;}
+.my-label .my-info dd.full li{float:left;display:inline-block;margin-right:0;}
+.my-label .my-info dd.full li:first-child{margin-right:10px;}
+.my-label .my-info dd.full li .selecter .selecter-selected,.my-label .my-info dd.full li .selecter .selecter-item{padding:2px 10px;}
+.nutrition-btn + h3{margin-bottom:0;padding-bottom:12px;border-bottom:2px solid #424252;}
+.my-label .search-container{padding:8px 0;}
+.my-label .search-container li{margin-left:5px;}
+.my-label .total{padding-top:16px;}
+.page-container.my-label .emphasis h3{margin-top:0 !important;}
+.page-container.my-label .emphasis ul, .page-container.my-label .emphasis ul:first-child{padding:0 !important;font-size:12px;}
+.page-container.my-label .emphasis ul li{float:left;display:inline-block;width:33.333333%;}
+.my-label .scroll-xx,.scroll-xx{margin-bottom:30px;}
+.my-label .scroll-xx table,.inner-body .ingredients-list{margin-bottom:0 !important;}
+.inner-body .ingredients-list th{font-size:12px !important;padding:4px !important;}
+.inner-body .ingredients-list th .sort{height:12px;}
+.inner-body .ingredients-list tbody td:first-child + td{text-align:center;font-size:12px;font-weight:normal;font-family:'맑은고딕',Malgun Gothic;color:#000;}
+.inner-body .ingredients-list tbody td:first-child + td + td{text-align:left;font-size:13px;font-weight:bold;font-family:'맑은고딕',Malgun Gothic;color:#666;}
+.inner-body .ingredients-list tbody td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td,.inner-body .ingredients-list tbody td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td{font-size:12px;font-family:'맑은고딕',Malgun Gothic;color:#333;}
+.inner-body table.direct{border:1px solid #D7D7D7;border-radius:4px;margin:0;margin-bottom:30px;border-collapse:collapse;}
+.inner-body table.direct td{font-weight:normal;text-align:left;}
+.inner-body table.direct tr:hover td,.inner-body table.additives tr:hover td{cursor:auto !important;}
+.inner-body table.direct label{visibility:visible;position:static;text-indent:0;}
+.inner-body table.direct input,.inner-body table.additives input{border:1px solid #D7D7D7;border-radius:4px;padding:0 5px;height:30px;text-align:right;margin:2px 0;font-weight:normal;color:#333;}
+.inner-body table.direct input.additive-name{text-align:left;width:100%;font-family:'맑은고딕',Malgun Gothic;font-weight:normal;}
+.inner-body table.direct th,.inner-body table.direct td{border:1px solid #D7D7D7;border-collapse:collapse;font-size:12px;padding:5px 10px;}
+.inner-body table.direct dt,.inner-body table.direct dd{clear:none;float:left;display:inline-block;width:110px;}
+.inner-body table.direct dt{margin:7px 0 0 0;width:80px;}
+.inner-body table.direct dd:nth-child(6n+0){width:95px;}
+.inner-body table.direct dt:nth-child(6n+1){clear:both;float:left;display:inline-block;}
+.inner-body table.direct dl + span{display:inline-block;float:right;color:#FD0000;padding-top:10px;}
+.inner-body table.direct dl:first-child{margin-bottom:0;border-bottom:none;float:left;}
+.inner-body span.required{display:block;text-align:right;margin-top:10px;padding:5px 10px 10px 0;font-size:12px;background:url(../img/common/label-need.gif) no-repeat top right !important;}
+.inner-body table.direct dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.inner-body table.direct th.required{background:#F6F6F6 url(../img/common/label-need.gif) no-repeat top right !important;}
+.inner-body table.additives th{font-size:13px;padding:12px 5px;}
+.inner-body table.additives td{font-size:13px;padding:5px;}
+.inner-body table.additives td:first-child + td + td,.inner-body table.additives td:first-child + td + td + td{font-weight:normal;color:#9797A6;font-size:11px;}
+.inner-body table.revision{margin-top:10px !important;}
+.inner-body table.revision tbody td:first-child + td{text-align:left;font-size:13px;font-weight:bold;font-family:'맑은고딕',Malgun Gothic;color:#666;}
+.inner-body table.revision tbody td:first-child + td + td{text-align:right;font-size:11px;font-weight:normal;color:#9797A6;}
+.inner-body table.revision tbody td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td{text-align:center;font-size:12px;font-weight:normal;font-family:'맑은고딕',Malgun Gothic;color:#666;}
+.inner-body table.revision tbody td:first-child + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td + td{text-align:center;font-size:11px;font-weight:normal;color:#9797A6;}
+.print-option-container{border:1px solid #D7D7D7;border-bottom:none;padding:20px;border-radius:4px 4px 0 0;}
+.print-option-container + .print-option-container{border-radius:0;padding:20px}
+.print-option-container ul{clear:both;margin:0;padding:0 !important;list-style:none;margin-top:-10px;}
+.print-option-container li{float:left;display:inline-block;width:20%;}
+.print-option-container li:nth-child(5n+1){clear:both;float:left;display:inline-block;}
+.print-option-container label{visibility:visible;position:static;text-indent:0;font-weight:normal;}
+.print-option-container h4{padding-bottom:15px;border-bottom:1px solid #F3F3F3;font-size:15px;}
+.print-option-container h4 span{color:#FD0000;text-align:right;display:inline-block;font-weight:normal;float:right;font-size:12px;margin-top:3px;}
+.print-option-container dl.dl-row dt,.print-option-container .dl-row dd{float:left;display:inline-block;margin:0;}
+.print-option-container dl{margin:0;}
+.print-option-container dl.dl-row dt{width:140px !important;margin-top:10px;}
+.print-option-container dl.dl-row dd .btn{padding:9px 15px 7px 15px;font-size:13px;}
+.page-container.my-label .emphasis:after,.print-option-container ul:after,.print-option-container dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.nutrition-label{margin:auto;border:2px solid #000;padding:15px;margin-bottom:10px;}
+.nutrition-label.standard{width:300px !important;}
+.nutrition-label.standard table{border:none;padding:0;margin:0;color:#000 !important;}
+.nutrition-label.standard table tr td{font-size:12px;line-height:15px;padding:2px 0;}
+.nutrition-label.standard table tr td:first-child{text-align:left;font-weight:bold}
+.nutrition-label.standard table tr td:not(:first-child){text-align:right;}
+.nutrition-label.standard table tr td:last-child{font-weight:bold;}
+.nutrition-label.standard table tr:first-child + tr + tr td{font-weight:normal;font-size:11px;}
+.nutrition-label.standard table tr:last-child td{font-weight:normal;font-size:11px;padding:5px 0 0 0;border:none;}
+.nutrition-label.standard table .label-title{padding:20px 0 20px 15px;background-color:#eee;border:1px solid #ddd;text-align:center !important;letter-spacing:15px;font-size:25px;}
+.nutrition-label.standard table .label-legend{font-size:11px;padding:10px 0;border-bottom:5px solid #696969;line-height:15px;}
+.nutrition-label.standard table .sub-item{padding-left:40px;font-weight:normal !important;}
+.nutrition-label.standard table .saperate{background-color:#696969;padding:1px 0;}
+.nutrition-label.horizon,.nutrition-label.linear,.nutrition-label.multiple{width:680px !important;}
+.nutrition-label.horizon table{border:none;padding:0;margin:0;color:#000 !important;}
+.nutrition-label.horizon > table.layout tr td{font-size:12px;line-height:15px;padding:2px 0;}
+.nutrition-label.horizon > table.layout tr:first-child td{text-align:left;font-weight:bold;border-bottom:5px solid #696969;padding-bottom:10px;font-size:11px;}
+.nutrition-label.horizon > table.layout > tbody > tr:first-child > td:not(:first-child){text-align:left;}
+.nutrition-label.horizon > table.layout > tbody > tr:first-child > td:first-child + td + td + td,.nutrition-label.horizon > table.layout > tbody > tr:first-child > td:first-child + td + td + td + td + td + td{text-align:right;}
+.nutrition-label.horizon > table.layout tr td:first-child{font-weight:bold;text-align:left;}
+.nutrition-label.horizon > table.layout tr:last-child td{font-weight:normal;font-size:11px;padding:5px 0 0 0;border:none !important;text-align:right;}
+.nutrition-label.horizon > table.layout tr:first-child td:first-child{background-color:#eee;border:1px solid #ddd}
+.nutrition-label.horizon table .label-title{padding:30px 0 10px 8px;text-align:center !important;letter-spacing:8px;font-size:25px;font-weight:bold;display:block;}
+.nutrition-label.horizon table .label-legend{font-size:11px;padding:10px 0;line-height:15px;display:block;text-align:center;}
+.nutrition-label.horizon table .space{background-color:#FFF;border:1px solid #FFF !important;}
+.nutrition-label.horizon > table.layout table tr:first-child td:first-child,.nutrition-label.horizon > table.layout table tr:first-child td{background:#FFF;border:none;border-bottom:1px solid #D7D7D7;font-size:12px;padding:2px 0;}
+.nutrition-label.horizon > table.layout > tbody > tr:first-child + tr > td{padding-bottom:0;border-bottom:1px solid #696969;}
+.nutrition-label.horizon > table.layout table td{font-size:12px !important;padding:3px 0 !important;}
+.nutrition-label.horizon > table.layout table td:first-child{text-align:left !important;}
+.nutrition-label.horizon > table.layout table tr td:not(:first-child){text-align:right !important;font-weight:normal;}
+.nutrition-label.horizon > table.layout table td:last-child,.nutrition-label.horizon > table.layout table tr:last-child td:first-child{font-weight:bold !important;}
+.nutrition-label.horizon > table.layout table tr:last-child td{border-bottom:1px solid #D7D7D7 !important;}
+.nutrition-label.horizon > table.layout table .sub-item{padding-left:40px !important;font-weight:normal !important;}
+.nutrition-label.linear table{border:none;padding:0;margin:0;color:#000 !important;}
+.nutrition-label.linear table tr td{font-size:12px;line-height:18px;padding:10px 0;border-bottom:none;}
+.nutrition-label.linear table tr:first-child td{text-align:left;font-weight:bold;border-bottom:5px solid #696969;padding-bottom:10px;}
+.nutrition-label.linear table tr td:first-child{text-align:center;}
+.nutrition-label.linear table tr td:last-child{text-align:left;}
+.nutrition-label.linear table tr:last-child td{font-weight:normal;font-size:11px;padding:0 0 0 200px;border:none;}
+.nutrition-label.linear table .label-title{padding:0 0 10px 15px;text-align:center !important;letter-spacing:15px;font-size:25px;font-weight:bold;}
+.nutrition-label.linear table .label-legend{font-size:11px;vertical-align:bottom;}
+.nutrition-label.multiple table{border:none;padding:0;margin:0;color:#000 !important;}
+.nutrition-label.multiple table tr td{font-size:12px;line-height:15px;padding:2px 0;}
+.nutrition-label.multiple table tr:first-child td{text-align:left;font-weight:bold;border-bottom:5px solid #696969;padding-bottom:10px;}
+.nutrition-label.multiple table tr:first-child td:not(:first-child){text-align:left;}
+.nutrition-label.multiple table tr:first-child td:last-child{padding-top:25px;font-size:11px;}
+.nutrition-label.multiple table tr:first-child + tr td{text-align:left;font-weight:normal !important;font-size:11px !important;border-bottom:2px solid #696969;padding:7px 0;}
+.nutrition-label.multiple table tr td:not(:first-child){text-align:right;}
+.nutrition-label.multiple table tr td:first-child{font-weight:bold;text-align:left;}
+.nutrition-label.multiple table tr:last-child td{font-weight:normal;font-size:11px;padding:5px 0 0 0;border:none !important;text-align:center;}
+.nutrition-label.multiple table .label-title{padding:10px 0 10px 15px;text-align:center !important;letter-spacing:15px;font-size:25px;font-weight:bold;}
+.nutrition-label.multiple table .label-legend{font-size:11px;padding:10px 0;border-bottom:5px solid #696969;line-height:15px;}
+.nutrition-label.multiple table .sub-item{padding-left:40px;font-weight:normal !important;}
+.nutrition-label.multiple table .space{background-color:#FFF;border:1px solid #FFF !important;}
+.nutrition-label + p{display:block;margin-bottom:30px;text-align:center;}
+.my-label .nutrition-btn{border:none;border-top:1px solid #D7D7D7;background:none;}
+.inner-body .my-label{border-top:none;}
+
+/*============================================
+  healthy-food-life > Food Poisoning Stats
+==============================================*/
+.fp{padding-top:0;}
+.fp > .search-container{margin-bottom:30px;}
+.fp-search-container{border:1px solid #D7D7D7;border-radius:4px;background:#F6F6F6;padding:20px;margin-bottom:30px;text-align:center;}
+.fp-search-container ul{margin:0 auto;padding:0;list-style:none;}
+.fp-search-container ul li{display:inline-block;margin:0 3px;font-size:12px;}
+.fp-search-container .btn-default{padding:7px 20px;font-weight:normal !important;}
+.fp-chart{border:1px solid #D7D7D7;border-radius:4px;}
+.fp-chart > .legend{text-align:right;padding:20px;font-size:12px;border-bottom:1px solid #D7D7D7;}
+.fp-chart > .chart{padding:20px;float:none;width:100%;border:none;display:block;}
+.fp-data > .legend{text-align:right;padding-bottom:10px;font-size:12px;}
+.fp-data > table th,.fp-data > table td{border-right:1px solid #D7D7D7;padding:5px;}
+.fp-data > table thead th:last-child,.fp-data > table tfoot th:last-child,.fp-data > table td:last-child{border-right:none;}
+.fp-data > table tfoot th.sum{background:#f4ead8;color:#841c11;font-size:12px;text-align:right;font-weight:bold;}
+.fp-data > table tbody td{color:#5E6068 !important;}
+.fp-data > table tbody td.sum{color:#000 !important;}
+.fp-data > table td,.fp-data > table td.sum,.fp-data > table th.sum{font-size:12px;text-align:right;}
+.fp-data > table tbody th,.fp-data > table td.sum,.fp-data > table tfoot td{background:#FBFBFB;}
+.fp-search-container ul.condition{margin-top:20px;padding-top:20px;border-top:1px solid #D7D7D7;}
+.fp-search-container ul.condition label{position:relative;display:inline;visibility:visible;}
+
+/*============================================
+  healthy-food-life > health-functional-food
+==============================================*/
+.img-list {clear:both;padding:0;margin:0;list-style:none;margin-top:-13px;}
+.img-list li {clear:both;display:inline-block;margin-top:0;margin-top:-7px;margin-left:0;margin-right:-4px;height:170px;}
+.icon {float:left;margin-top:-20px;margin-right:15px;}
+.return-box-line01 {clear:both;padding:20px;margin-bottom:10px;border-radius:4px;color:#8a6d3b;background-color:#ffffff;}
+.return-box-line02 {clear:both;height:350px;padding:20px;margin-bottom:30px;border:1px solid #bcbcbc;border-radius:4px;color:#8a6d3b;background-color:#ffffff;}
+.return-box-line02 .box-text {float:left;width:430px;text-align:left;margin:0;}
+.return-box-line02 .box-img {float:right;margin:0;}
+.health .emphasis h3:first-child{margin-top:0;}
+.health .emphasis p:last-child{margin-bottom:0;}
+ul.health{padding:0 !important;margin:0;font-size:13px;list-style-type:disc;}
+ul.health li {float:left;display:inline-block;margin-bottom:15px;width:33.3333%;padding-left:15px;background:url(../img/common/bullet_b.png) no-repeat 2% 5px;}
+ul.health:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.search-container .health{margin:0;padding:0;}
+.search-container .health input[type=text]{color:#333;background-color:#fff;border:1px solid #DFDDDD;height:37px;font-size:13px;padding:5px 7px;width:150px;display:inline-block;font-weight:bold;line-height:27px;margin-right:5px;}
+.search-container .health .search-wrap{float:right;margin-top:-10px;margin-bottom:16px;display:inline-block;text-align:right;}
+.search-container .health .total{float:left;display:inline-block;padding-top:22px;padding-left:3px;font-size:11px;color:#9797A5;}
+.health-img {float:left;margin-top:-20px;padding:0;}
+.health-img02 {float:left;margin-top:-20px;margin-bottom:30px;padding:0;}
+.health-p {text-align:left;margin-top:20px;margin-left:370px;}
+.health-pregnantwoman {text-align:left;margin-top:20px;margin-left:250px;}
+.health-line {float:left;padding-left:15px;margin-left:15px;border-top:1px solid #DFDDDD;border-bottom:1px solid #DFDDDD;height:180px;width:340px;}
+.health-icon{float:left;display:inline-block;width:140px;height:32px;margin-right:20px;margin-top:20px;text-align:left;padding-left:35px;font-weight:bold;line-height:30px;background:no-repeat 0% 0;}
+.page-container .health {margin:0;padding:0;}
+.page-container .health  h2{margin-bottom:10px;color:#0070bd;border:1px solid #bcbcbc;border-radius:6px;font-size:25px;margin-top:0;text-align:left;background:url(../img/common/bg-bar.gif) repeat-x 0% 0;}
+.page-container .health  h2 span{padding-left:10px;background:#FFF;padding-right:10px;float:left;font-size:14px;font-weight:bold;}
+.page-container .health .btn-toggle{float:left;border-radius:6px;background:url(../img/common/bt_bar.jpg)100% 0;display:block;height:32px;width:35px;background-repeat:no-repeat;cursor:pointer;margin:0 auto;text-indent:-99999px;}
+.page-container .health .btn-toggle:hover{background-position:50% -32px;}
+.page-container .health .btn-toggle.active{background-position:50% -64px;}
+.page-container .health .ox {width:500px;margin-left:130px;padding:0;}
+.page-container .health .emphasis {padding:20px;margin-left:10px;margin-bottom:30px;border:1px solid #faebcc;border-radius:4px;color:#8a6d3b;background-color:#fcf8e3;}
+.page-container .health h4{text-align:left;width:450px;font-size:15px;color:#222;margin-top:10px;margin-left:10px;margin-bottom:20px;line-height:15px;}
+.page-container .health h5{text-align:left;font-size:15px;color:#D80000;margin-top:0;margin-bottom:10px;line-height:20px;}
+
+/*============================
+  healthy-food-life > GMO
+==============================*/
+.page-container table#accordion td.subject{border-bottom:1px solid #D7D7D7;font-size:15px;padding:12px 5px;text-align:left;font-weight:bold;color:#000;}
+.page-container table.panel-group td.a p{margin-bottom:10px;}
+.gmo-search-container{border:1px solid #D7D7D7;border-radius:4px 4px 0 0;padding:20px 0 10px 20px;margin-top:30px;}
+.gmo-search-container input[type=text]{height:36px;width:210px;border:1px solid #D7D7D7;border-radius:4px;}
+.gmo-btn{border:1px solid #D7D7D7;border-radius:0 0 4px 4px;margin-top:-1px;margin-bottom:30px;text-align:center;background:#F6F6F6;padding:20px;}
+.gmo-search-container .btn-default{padding:7px 17px;}
+.gmo-btn .btn-default{padding:7px 20px;}
+.gmo-search-container dd,.gmo-search-container dt{float:left;display:inline-block;}
+.gmo-search-container dt{width:95px;padding-top:10px;}
+.gmo-search-container dt label{position:static;visibility:visible;text-indent:0;}
+.gmo-search-container dd{width:210px;margin-bottom:10px;}
+.gmo-search-container dt + dd{margin-right:24px;}
+.gmo-search-container dd.full{width:545px;margin-right:0;}
+.gmo-search-container dd .select-container{display:inline-block;margin-right:9px;}
+.gmo-search-container:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*================================
+  Advanced Information > glossary
+==================================*/
+.glossary-search{border:1px solid #D7D7D7;border-radius:5px;margin:0;padding:20px;text-align:center;background:#F6F6F6;margin-bottom:20px}
+.glossary-search ul{margin:0;padding:0;list-style:none;}
+.glossary-search ul li{float:left;margin-right:10px;}
+.glossary-search ul li:last-child{margin-right:0;}
+.glossary-search .btn{height:38px;}
+.glossary-search input[type=text]{height:38px;width:399px;border:1px solid #D7D7D7;border-radius:3px;padding:0 7px;}
+.glossary{background:url(../img/advanced-information/bg-dic-body.png) repeat-y;height:697px;width:995px;display:block;}
+.glossary:before{content:'';background:url(../img/advanced-information/bg-dic-top.png) no-repeat;height:26px;width:995px;display:block;}
+.glossary:after{clear:both;content:'';background:url(../img/advanced-information/bg-dic-bottom.png) no-repeat;height:120px;width:995px;display:block;}
+.glossary > div{float:left;display:inline-block;}
+.glossary > .word-list{width:203px;}
+.glossary > .word-list > .keyword{width:203px;background:url(../img/advanced-information/bg-keyword.png) no-repeat;height:50px;padding:11px 0 0 25px;font-weight:bold;font-size:15px;}
+.glossary > .word-list > ul{height:500px;margin:0;padding-left:25px;line-height:25px;list-style:none;}
+.glossary > .word-list > ul a{color:#444;width:175px;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.glossary > .word-list > ul a:hover{color:#0070bd;}
+.glossary > .word-list > ul a.active{color:#0070bd;font-weight:bold;}
+.glossary > .word-list > .page{width:203px;background:url(../img/advanced-information/bg-pagination.png) no-repeat;height:50px;padding:22px 0 0 15px;}
+.glossary > .word-list > .page > .prev{width:14px;background:url(../img/advanced-information/glossary-page.png) no-repeat 0 0;height:17px;text-indent:-99999px;display:inline-block;}
+.glossary > .word-list > .page > .next{width:14px;background:url(../img/advanced-information/glossary-page.png) no-repeat -14px 0;height:17px;text-indent:-99999px;display:inline-block;margin-left:5px;}
+.glossary > .word-list > .page > .prev:hover{background:url(../img/advanced-information/glossary-page.png) no-repeat 0 -17px;}
+.glossary > .word-list > .page > .next:hover{background:url(../img/advanced-information/glossary-page.png) no-repeat -14px -17px;}
+.glossary > .word-dscr{width:715px;height:600px;padding:0 20px 30px 30px;overflow:hidden;}
+.glossary > .word-dscr h2{margin:30px 0 20px 0;line-height:25px;}
+.glossary > .word-dscr h2 span{color:#A8A8B7;font-size:15px;font-weight:normal;display:block;}
+.glossary > .word-dscr dt{margin-bottom:5px;}
+.glossary > .word-dscr dd{margin-bottom:15px;color:#868695;font-size:12px;width:355px;max-height:400px;overflow:auto;}
+.glossary > .word-index{width:53px;}
+.glossary > .word-index .language{position:absolute;height:53px;width:39px;background:url(../img/advanced-information/bg-change.png) no-repeat;margin-left:-35px;margin-top:-10px;text-align:center;padding-top:10px;}
+.glossary > .word-index .language a,.glossary > .word-index .eng a,.glossary > .word-index .kor a{color:#FFF;font-weight:bold;}
+.glossary > .word-index .eng{background:url(../img/advanced-information/bg-tab-eng.png) no-repeat;height:430px;width:53px;margin-left:9px;}
+.glossary > .word-index ul{padding:0;margin:0;line-height:30px;list-style:none;}
+.glossary > .word-index ul li{float:left;width:30px;text-align:center;font-size:15px;margin-bottom:2px;height:30px;margin-top:-16px;}
+.glossary > .word-index ul li:nth-child(even){float:left;width:23px;text-align:center;font-size:15px;margin-bottom:2px;height:30px;margin-top:0px;}
+.glossary > .word-index ul li:first-child{float:left;width:30px;text-align:center;font-size:15px;margin-bottom:2px;height:30px;margin-top:0px;}
+.glossary > .word-index .eng ul li:first-child + li{float:left;width:23px;text-align:center;font-size:15px;margin-bottom:2px;height:30px;margin-top:16px;}
+.glossary > .word-index .kor{background:url(../img/advanced-information/bg-tab-kor.png) no-repeat;height:446px;width:53px;margin-left:9px;}
+.glossary > .word-index .kor ul > li{float:none;width:30px;text-align:center;font-size:15px;margin-bottom:2px;height:30px;margin-top:0px;}
+.glossary > div:last-child:after,.glossary > .word-index ul li:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*================================
+  Advanced Information > CODEX
+==================================*/
+.file{margin:0;padding:0;list-style:none;}
+.file li{margin:0;list-style:none;background:url(../img/common/icon-file-down.gif) no-repeat 2px 3px;}
+.file li a{padding-left:25px;line-height:22px;font-size:12px;color:#424251;}
+.page-container table td a.subject{font-weight:bold;}
+.codex-pop #inner-view .list-container{background:#FFF;}
+.codex-pop #inner-view .list-container td{font-weight:normal;text-align:left;}
+.page-container .emphasis ul.codex, .page-container .emphasis ul.codex:first-child{padding:0 0 0 10px !important;margin:0;}
+.page-container .emphasis ul.codex li{float:left;width:33.3333%;}
+.page-container .emphasis ul.codex li:nth-child(3n+1){clear:both;float:left;}
+.page-container .emphasis ul.codex li a{color:#444;}
+.page-container .emphasis ul.codex li a:hover{color:#0070bd;}
+.page-container .emphasis ul.codex:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*======================================
+  Advanced Information > Advanced DB
+========================================*/
+.advanced-db{padding-bottom:30px;margin-bottom:30px;border-bottom:1px dashed #D7D7D7;}
+.advanced-db:last-child{padding-bottom:0px;margin-bottom:30px;border-bottom:none;}
+.advanced-db .screen-shot{float:left;display:inline-block;width:300px;height:200px;border:1px solid #D7D7D7;border-radius:4px;background-size:300px;background-position:50% 0;text-indent:-999999px;-ms-behavior:url(/css/backgroundsize.min.htc);}
+.advanced-db .screen-shot.no{background-image:url(../img/no-img.jpg);background-size:800px;background-position:50% 50%;-ms-behavior:url(/css/backgroundsize.min.htc);}
+.advanced-db .explain{float:right;display:inline-block;width:635px;}
+.advanced-db .explain .db-name{font-size:25px;font-weight:700;}
+.advanced-db .explain .db-explain{font-size:13px;color:#3C3C45;margin:15px 0;}
+.advanced-db:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*================================
+  Contents
+==================================*/
+.meal-natrum{float:left;display:inline-block;margin-right:25px;width:210px;margin-bottom:10px;}
+.meals .meal-natrum:first-child + .meal-natrum + .meal-natrum{margin-right:0;}
+.meals:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.meal-natrum h3{margin-top:10px;}
+.meal-natrum ul{width:210px;border:1px solid #D7D7D7;margin:0 !important;padding:0;list-style:none;}
+.meal-natrum ul li{width:208px;text-align:center;padding:5px;}
+.meal-natrum ul li:first-child{background-position:50% 0;background-repeat:no-repeat;text-align:center;font-size:17px;font-weight:bold;padding-top:140px;}
+.meal-natrum ul li:first-child + li{border-top:1px solid #D7D7D7;border-bottom:1px solid #D7D7D7;margin:5px 0;text-indent:-99999px;padding:0;}
+.meal-natrum ul li:first-child + li span{display:block;height:31px;background:url(../img/healthyfoodlife/graph-03.png);}
+.meal-natrum ul li:last-child{padding-bottom:10px;color:#FD0000}
+.meal-natrum ul li:first-child + li span{display:block;height:31px;background:url(../img/healthyfoodlife/graph-03.png);font-size:15px;}
+.meal-natrum ul li:last-child span{color:#868695;font-size:11px;}
+
+.health-functional-food-search{border:1px solid #D7D7D7;border-radius:5px;margin:0;padding:10px;text-align:center;background:#F6F6F6;margin-bottom:20px;}
+.health-functional-food-search .btn{height:38px;}
+.health-functional-food-search input[type=text]{height:38px;width:320px;border:1px solid #D7D7D7;border-radius:3px;padding:0 7px;}
+.health-functional-food-search .search-box {margin:0;padding:0;text-align:center;margin-bottom:0;}
+.search-box dl{padding:10px 10px 10px;margin:0;}
+.search-box dl dt,.search-condition dl dd{float:left;display:inline-block;margin-bottom:10px;}
+.search-box dl dt{clear:both;float:left;width:80px;text-align:left;padding-top:10px;}
+.search-box dl ul{margin:0;padding:0;}
+.search-box dl li{float:left;display:inline-block;margin-right:10px;}
+.search-box dl li span{display:inline-block;padding-top:10px;}
+.health-functional-food-search .search-box:after,.search-box dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+.table-sm th,.table-sm td{font-size:12px !important;line-height:16px !important;}
+.table-sm td ul,.table-sm td ol,.ref ul{padding-left:18px;text-align:left;margin:0;}
+.table-sm tbody th{background-color:#FAFAFA !important;}
+.table-sm tbody th img{margin:0 auto;}
+table.col + p,.ref{margin-top:-20px;color:#6D6F76 !important;}
+.ref-list{margin:-15px 0 30px 0;padding:0 0 0 15px !important;color:#6D6F76 !important}
+ul.ul-list{margin:0 0 30px 0;padding:0 0 0 15px !important;}
+ol.ol-list{margin:0 0 30px 0;padding:0 0 0 20px !important;}
+img.inner-img{position:absolute;margin-left:500px;margin-top:-135px;}
+table.table-sm + table.table-sm{margin-top:-31px;}
+.img-box{border:1px solid #D7D7D7;border-radius:4px;padding:20px;margin-bottom:30px;}
+.img-box img{margin:20px auto !important;}
+.emphasis ul.inline,ul.inline,.page-container .emphasis ul.inline, .page-container .emphasis ul.inline:first-child{margin:0;padding:0 !important;}
+.emphasis ul.inline li,ul.inline li{float:left;display:inline-block;margin:0 15px;}
+.emphasis ul.inline:after,ul.inline:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.emphasis ul.inline li label{visibility:visible;position:static;text-indent:0;}
+
+.label-explain{overflow:hidden;position:relative;height:500px;border:1px solid #D7D7D7;padding:30px;border-radius:4px;}
+.label-explain p,.label-explain img{margin:0 !important;}
+.label-explain .label01{position:absolute;left:240px;top:140px;}
+.label-explain .label02{position:absolute;left:262px;top:21px;}
+.label-explain .label03{position:absolute;left:80px;top:38px;}
+.label-explain .label04{position:absolute;left:439px;top:221px;}
+.label-explain .label05{position:absolute;left:80px;top:265px;}
+
+.child_kcal_boy{background:#D9EDE6;position:relative;overflow:hidden;height:400px;border:1px solid #BBDDD5;border-radius:4px;}
+.child_kcal_girl{background:#FEEFD3;position:relative;overflow:hidden;height:400px;border:1px solid #FFDEAC;border-radius:4px;}
+.boxing img{width:95%;margin:0 !important;padding:0 !important;}
+.boxing p{position:absolute;margin:0 !important;padding:0 !important;}
+.boxing .tit{left:15px;top:10px;}
+.boxing .st01{left:15px;top:80px;}
+.boxing .st02{left:211px;top:149px;}
+.boxing .st03{left:379px;top:17px;}
+.boxing .st04{left:530px;top:193px;}
+.ul-legend{margin:0;padding:0;list-style:none;margin-top:20px;}
+.ul-legend li{float:left;display:inline-block;}
+.ul-legend li:nth-child(odd){clear:both;float:left;display:inline-block;}
+.ul-legend li img{margin:0 !important;width:340px;}
+.ul-legend:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.child_snack{overflow:hidden;}
+.child_snack .good,.child_snack .bad{float:left;display:inline-block;margin:0;padding:0;list-style:none;margin-right:20px;width:250px;}
+.child_snack .good li,.child_snack .bad li{background:none;margin:0px;width:250px;}
+.child_snack img{margin:0 !important;width:250px;}
+.child_snack:after,.nutrition-signal:after,.safety-cook:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.nutrition-check-step,.nutrition-signal{margin:0;padding:0;list-style:none;margin-left:20px;}
+.nutrition-check-step img{margin:0 !important;width:450px;}
+.nutrition-check{overflow:hidden;position:relative;height:360px;}
+.nutrition-check img,.nutrition-signal img{margin:0 !important;}
+.nutrition-check .st01{position:absolute;left:135px;top:0;}
+.nutrition-check .st02{position:absolute;left:20px;top:5px;}
+.nutrition-check .st03{position:absolute;left:20px;top:139px;}
+.nutrition-check .st04{position:absolute;left:350px;top:25px;}
+.nutrition-signal li{float:left;display:inline-block;margin-right:20px;}
+.safety-cook{margin:0;padding:0;list-style:none;}
+.safety-cook li{float:left;display:inline-block;margin:0 !important;}
+.safety-cook img{margin:0 !important;padding:0 !important;width:170px;}
+.nutrition-signal li:first-child + li{padding:20px 0 45px;}
+.recipe-header,.page-container .emphasis .recipe-body,.recipe-header img,.recipe-body img{margin:0 !important;padding:0 !important;list-style:none;text-align:left;}
+.recipe-header li{float:left;display:inline-block;}
+.recipe-header li:last-child{float:right;display:inline-block;width:380px;}
+.recipe-header dt{margin-bottom:10px;}
+.recipe-header:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.recipe-body ol{padding-left:20px;margin-bottom:20px;}
+.sports dt{padding:30px 0 60px 160px;border-top:1px dashed #D7D7D7;background-position:30px 10px;background-repeat:no-repeat;width:680px;}
+.sports dt:first-child{border-top:none;}
+.sports dd{position:absolute;margin:-70px 0 0 160px;width:520px;}
+.snack-kcal{position:relative;background:url("../img/contents/snackKcal_bg.gif") no-repeat 50% 99px transparent;height:455px;}
+.snack-kcal img,.snack-kcal p,.stretching img,.stretching p{margin:0 !important;padding:0 !important;}
+.snack-kcal .st01{position:absolute;left:74px;top:76px;}
+.snack-kcal .st02{position:absolute;right:60px;top:265px;}
+.snack-kcal .st03{position:absolute;left:178px;top:22px;}
+.snack-kcal .st04{position:absolute;right:139px;top:299px;}
+.snack-kcal .st05{position:absolute;left:283px;top:17px;}
+.snack-kcal .st06{position:absolute;right:270px;top:325px;}
+.snack-kcal .st07{position:absolute;right:119px;top:30px;}
+.snack-kcal .st08{position:absolute;left:140px;top:315px;}
+.snack-kcal .st09{position:absolute;right:73px;top:100px;}
+.snack-kcal .st10{position:absolute;left:72px;top:265px;}
+.snack-kcal .st11{position:absolute;right:52px;top:181px;}
+.snack-kcal .st12{position:absolute;left:15px;top:175px;}
+.stretching{overflow:hidden;position:relative;background:url("../img/contents/stretching_bg.gif") no-repeat center 103px transparent;height:680px;}
+.stretching .st01{position:absolute;left:234px;top:300px;}
+.stretching .st02{position:absolute;left:39px;top:118px;}
+.stretching .st03{position:absolute;left:186px;top:35px;}
+.stretching .st04{position:absolute;left:346px;top:65px;}
+.stretching .st05{position:absolute;left:429px;top:158px;}
+.stretching .st06{position:absolute;left:406px;top:378px;}
+.stretching .st07{position:absolute;left:254px;top:490px;}
+.stretching .st08{position:absolute;left:122px;top:422px;}
+.stretching .st09{position:absolute;left:14px;top:324px;}
+
+ul.half li{float:left;width:50%;margin:0;}
+ul.half:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+.img-group{text-align:center;}
+.img-group img{margin:0 !important;padding:0 !important;display:inline-block !important;}
+.exercise{background:url("../img/contents/exercise_bg.gif") no-repeat scroll left top transparent;position:relative;height:550px;}
+.exercise img,.exercise p{margin:0 !important;padding:0 !important;display:inline-block !important;}
+.exercise .st01{position:absolute;left:29px;top:14px;}
+.exercise .st02{position:absolute;left:221px;top:59px;}
+.exercise .st03{position:absolute;left:434px;top:49px;}
+.exercise .st04{position:absolute;left:20px;top:185px;}
+.exercise .st05{position:absolute;left:403px;top:130px;}
+.exercise .st06{position:absolute;left:163px;top:300px;}
+.exercise .st07{position:absolute;left:343px;top:304px;}
+.exercise .st08{position:absolute;left:512px;top:286px;}
+.exercise .st09{position:absolute;left:186px;top:433px;}
+
+.old_salt{position:relative;overflow:hidden;height:400px;background:url('../img/contents/old_img_bg.gif') no-repeat 50% 50%;border:1px solid #D7D7D7;border-radius:4px;}
+.old_salt img,.old_salt p{margin:0 !important;padding:0 !important;display:inline-block !important;}
+.old_salt .st01{position:absolute;left:255px;top:155px;}
+.old_salt .st02{position:absolute;left:127px;top:27px;}
+.old_salt .st03{position:absolute;left:372px;top:27px;}
+.old_salt .st04{position:absolute;left:451px;top:147px;}
+.old_salt .st05{position:absolute;left:372px;top:266px;}
+.old_salt .st06{position:absolute;left:127px;top:266px;}
+.old_salt .st07{position:absolute;left:45px;top:147px;}
+
+.alcoholHelthy{overflow:hidden;position:relative;background: url("../img/contents/alcoholHelthy_bg.gif") no-repeat scroll 180px 50% transparent;height:500px;border:1px solid #D7D7D7;border-radius:4px;}
+.alcoholHelthy img,.alcoholHelthy p{margin:0 !important;padding:0 !important;display:inline-block !important;}
+.alcoholHelthy .st01{position:absolute;left:52px;top:50px;}
+.alcoholHelthy .st02{position:absolute;left:52px;top:145px;}
+.alcoholHelthy .st03{position:absolute;left:52px;top:222px;}
+.alcoholHelthy .st04{position:absolute;left:52px;top:335px;}
+.alcoholHelthy .st05{position:absolute;left:467px;top:50px;}
+.alcoholHelthy .st06{position:absolute;left:467px;top:127px;}
+.alcoholHelthy .st07{position:absolute;left:467px;top:205px;}
+.alcoholHelthy .st08{position:absolute;left:467px;top:311px;}
+.alcoholHelthy .st09{position:absolute;left:467px;top:387px;}
+
+.weigthImg02{position:relative;overflow:hidden;height:515px;text-align:center;border:1px solid #D7D7D7;border-radius:4px;}
+.weigthImg02 img,.weigthImg02 p{margin:0 !important;padding:0 !important;display:inline-block !important;}
+.weigthImg02_01{position:absolute;left:200px;top:350px;}
+.weigthImg02_02{position:absolute;left:200px;top:276px;}
+.weigthImg02_03{position:absolute;left:274px;top:219px;}
+.weigthImg02_04{position:absolute;left:30px;top:80px;}
+.weigthImg02_05{position:absolute;left:190px;top:20px;}
+.weigthImg02_06{position:absolute;left:360px;top:30px;}
+.weigthImg02_07{position:absolute;left:480px;top:80px;}
+
+.bg-left{background-position:0 0;background-repeat:no-repeat;padding-left:260px;padding-top:3px;height:120px;margin-bottom:20px;}
+.img-group .list-inline{margin:20px 0;padding:0 !important;}
+.img-group .list-inline > li{margin:0;padding:0;margin-left:-4px;}
+h3 span img{margin:0 0 0 10px !important;padding:0 !important;display:inline-block !important;}
+
+.info-container + h2 + ul {padding:0;margin:0;list-style:none;}
+.info-container + h2 + ul li{float:left;margin-bottom:10px;}
+
+/*** nutrition edu ******/
+.decayed{background: url("../img/contents/img_decayed.gif") no-repeat 55px 0px;padding:55px;}
+.pig{background: url("../img/contents/img_pig.gif") no-repeat 55px 0px;padding:110px;}
+.lack{width:630px;padding-left:30px;margin:0px;}
+.lack li{display:inline;background-image:none;padding:0px;margin:0px;}
+.lack li img{margin:0;display:inline-block;}
+.emphasis .ol-list{margin-bottom:0;}
+.food-tower-wrap{width:680px;}
+.food-tower{width:336px;float:left;display:inline-block;padding:0;margin-top:30px;margin-left:20px;}
+.food-tower li{display:block;margin:0;}
+.food-tower li img{margin:0;}
+.food-tower + ul.ul-list{float:left;display:inline-block;width:260px;margin-left:50px;}
+.food-tower-wrap:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/******* IE Only *******/
+
+.nutrition .search-container input[type=text]{width:218px;}
+
+.ie8 .glossary-search li:first-child + li + li{margin-right:0;}
+.ie8 .glossary-search input[type=text]{width:398px;}
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li,
+.ie8 .glossary > .word-index .eng ul li:first-child + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li + li{float:left;width:23px;text-align:center;font-size:15px;margin-bottom:2px;height:30px;margin-top:0px;}
+
+.ie8 .search-container02 input[type=text]{margin-top:3px;}
+.ie8 .bmi-search .col-3 .btn-default{padding:9px 14px;}
+
+.ie8 .nutrtion-search input#nutrition-keyword{width:149px;}
+.ie8 .nutrtion-search ul li:first-child + li + li + li{margin-right:0;}
+.ie9 .nutrtion-search input#nutrition-keyword{width:150px;}
+
+.ie8 .my-info dl{margin-left:20px;border-bottom:none;padding-bottom:0;margin-bottom:10px;}
+.ie8 .my-info dt:first-child + dd + dt + dd{margin-right:20px;}
+.ie8 .search-container input#materialSearchValue{top:-9px !important;}
+.ie8 .search-container input#searchValue{top:-8px !important;}
+.ie8 .tab-pane .search-container input[type=text]{top:0 !important;}
+.ie8 .nutrition .search-container input[type=text]{top:-8px !important;}
+.ie8 .tab-pane .search-container li:first-child + li + li + li input[type=text]{width:219px;}
+.ie8 .tab-pane .date .prev{margin-left:33px;}
+.ie8 .tab-pane .date .next{margin-left:172px;}
+.ie8 .my-nutrition .dashboard .calorie + .calorie{border-right:none;}
+.ie8 .my-info dl .full input[type=text]{width:545px !important;line-height:35px;}
+.ie8 .food-nutrition input[type=text]{line-height:33px;}
+.ie8 .food-nutrition dl:first-child + dl + dl + dl,.ie8 .food-nutrition dl:first-child + dl + dl + dl + dl + dl + dl + dl,
+.ie8 .food-nutrition dl:first-child + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl,.ie8 .food-nutrition dl:first-child + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl + dl{margin-right:0;}
+.ie8 table.my-graph thead th:first-child + th + th{border-right:none;}
+.ie8 table.my-graph tr  th:first-child + td + td{text-align:left;border-right:none;}
+.ie8 table.my-graph tr  th:first-child + td + td span{display:block;font-weight:bold;font-size:12px;padding-left:10px;}
+.ie8 .inner-body dl.weight li dl{clear:both;float:left;border-bottom:none;margin-bottom:0;}
+.ie8 .inner-body dl.weight li dl dt:first-child + dd{width:50px;margin-top:12px;color:#0070bd;}
+.ie9 .my-nutrition .date .prev{margin-left:33px;}
+.ie9 .my-nutrition .date .next{margin-left:172px;}
+.ie8 .nutrition-search-container dd{margin-right:20px;}
+.ie8 .nutrition-search-container dd.full{margin-right:0;}
+.ie8 .nutrition-search-container dt:first-child + dd.full .btn-default,.ie8 .nutrition-search-container dt:first-child + dd.full + dt + dd.full .btn-default{padding:7px 15px;}
+.ie8 .nation-search,.ie9 .nation-search{margin-left:-32px;margin-top:5px;}
+.ie8 .re-search-container dt:first-child + dd + dt{margin-left:20px;}
+.ie8 .info-container dl dd{width:660px;}
+.ie8 .info-container dl.half{width:390px;margin-right:0;}
+.ie8 .info-container dl.half dd{width:260px;margin-right:0;}
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half,
+.ie8 .info-container dl:first-child + dl + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half{float:right;}
+.ie8 #inner-view  dl:first-child + dl + dl.half + dl.half{float:right;}
+.ie8 #inner-view  dl:first-child + dl + dl.half + dl.half + dl.half,.ie8 #inner-view  dl:first-child + dl + dl.half + dl.half + dl.half + dl.half + dl.half,.ie8 #inner-view  dl:first-child + dl + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half + dl.half{float:left;}
+
+.ie8 .share li:first-child + li + li + li + li a{border-right:none;}
+.ie8 .calorie-search .col-3 .btn-default{padding:9px 14px;}
+.ie8 .nutrition-search-container .btn-default{padding:7px 15px;}
+
+.ie8 .tab-2 li:first-child + li a{border-right:none;}
+.ie8 .tab-3 li:first-child + li + li a{border-right:none;}
+.ie8 .tab-4 li:first-child + li + li + li a{border-right:none;}
+.ie8 .tab-5 li:first-child + li + li + li + li a{border-right:none;}
+.ie8 .page-container .bs-underline li:first-child + li{width:530px;}
+.ie8 .page-container:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/*@media all and (-ms-high-contrast:none){*/
+	/* IE10 */
+	.nutrtion-search input#nutrition-keyword{width:150px;}
+	.my-nutrition .date .prev{left:118px;}
+	.my-nutrition .date .next{left:107px;}
+	.nation-search{margin-left:-32px;margin-top:5px;}
+	/* IE11 */
+	*::-msbackdrop, .nutrtion-search input#nutrition-keyword{width:150px !important;}
+	*::-msbackdrop, .my-nutrition .date .prev{left:118px;}
+	*::-msbackdrop, .my-nutrition .date .next{left:107px;}
+	*::-msbackdrop, .nation-search{margin-left:-32px;margin-top:5px;}
+/*}*/
+
+
+/* 검색어 자동완성 */
+.auto_complete {z-index:999;background:#fff;margin-top:-1px;background:red;}
+.auto_complete .auto_result {position:absolute;background:#fff;font-size:13px;}
+/* .auto_complete .auto_left {width:230px;height:212px;overflow-y:auto;border:1px solid #dfdddd;} */
+.auto_complete .auto_left {width:230px;border:1px solid #dfdddd;}
+.auto_complete .auto_left ul li {line-height:30px;border-bottom:solid 1px #dfdddd;width:100%;text-align:left;}
+.auto_complete .auto_left a {display:block;padding:2px;color:#333333;padding:0 10px 0 10px;}
+.auto_complete .auto_left a:hover {text-decoration:none;background:red;background:#f8f8f8;}
+.auto_complete .auto_left a span {color:#ff0000;font-weight:bold;}
+
+.auto_complete .auto_r_bottom a {display:block;padding:8px;}
+.auto_complete .auto_r_bottom a img {float:left;margin-right:10px;width:55px;height:55px;}
+.auto_complete .auto_r_bottom a div {float:left;color:#00c;text-decoration:underline;width:218px;height:55px;overflow-x:auto;}
+.auto_complete .auto_off {position:absolute;font-size:11px;margin-top:210px;background:#f9f9f9;width:230px;line-height:20px;border:1px solid #dfdddd;padding-right:13px; color:#333;}
+
+
+
+
+
+/*============================================================
+나의영양성분표(영양성분표 산출) 메뉴 관련 CSS 추가 START
+============================================================*/
+/* 2017-01-22 건강한식생활 > 영양성분표 산출 > 결과확인 page-container 분기 */
+.page-container2{border-top:2px solid #424252;padding-top:50px;}
+.page-container2 > article{margin-top:0;}
+.page-container2 .bs-callout{padding:20px;margin-bottom:50px;border:1px solid #eee;border-left-width:5px;border-radius:3px;}
+.page-container2 .bs-callout-info{border-left-color:#0070bd;}
+.page-container2 .bs-callout-danger{border-left-color:#FD0000;}
+.page-container2 .bs-callout p{margin:0;padding:0;line-height:20px;}
+.page-container2 article h2{font-size:25px;color:#0070bd;margin:50px 0 30px 0;line-height:35px;}
+.page-container2 > article > h2:first-child{margin-top:0;}
+-container h3{font-size:17px;color:#222;margin-top:30px;margin-bottom:15px;line-height:30px;}
+.page-container2 h4{font-size:14px;color:#0070bd;margin-top:0px;margin-bottom:15px;line-height:20px;}
+.page-container2 h5{text-align:center;font-size:15px;color:#0070bd;margin-top:0px;margin-bottom:20px;}
+.page-container2 p{font-size:13px;color:#222;margin-bottom:30px;line-height:20px;}
+.page-container2 p span{font-size:13px;color:#0070bd;margin-bottom:30px;line-height:20px;}
+.page-container2 article img{margin-bottom:30px;}
+.page-container2 .emphasis{padding:20px;margin-bottom:30px;border:1px solid #faebcc;border-radius:4px;color:#8a6d3b;background-color:#fcf8e3;}
+.page-container2 .emphasis.w{padding:20px;margin-bottom:30px;border:1px solid #D7D7D7;border-radius:4px;color:#333;background-color:#FFF;}
+.page-container2 .emphasis ul:last-child{margin-top:15px;color:#8a6d3b;}
+.page-container2 .emphasis.w ul:last-child{margin-top:0;color:#333;}
+.page-container2 .emphasis ul,.page-container2 .emphasis ul:first-child{padding:0 0 0 15px !important;margin:0;}
+.page-container2 .emphasis p{font-size:13px;color:#222;margin-bottom:30px;line-height:20px;}
+.page-container2 .emphasis p:last-child{margin-bottom:0;}
+.page-container2 .emphasis h3:first-child{margin-top:0;}
+.page-container2 .emphasis span{font-size:16px;color:#222;margin-bottom:20px;line-height:30px;font-weight:bold}
+.page-container2 .emphasis:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+/* Table Default */
+.page-container2 table{clear:both;width:100%;border-top:1px solid #00A5BE;margin-bottom:30px;margin-top:-1px;border-collapse:collapse;}
+.page-container2 table caption{position:absolute !important; top:-9999px !important; left:-9999px !important; font-size:1px !important; width:1px !important; height:1px !important; color:rgba(255, 255, 255, 0) !important;}
+.page-container2 table th{background:#F6F6F6;border-bottom:1px solid #D7D7D7;font-size:13px;color:#000;text-align:center;padding:15px 5px;line-height:20px;font-weight:bold;border-collapse:collapse}
+.page-container2 table td{border-top:1px solid #000;font-size:13px;padding:12px 5px;line-height:19px;text-align:left;font-weight:normal;color:#000;border-collapse:collapse}
+.page-container2 table.tc td{border-bottom:1px solid #D7D7D7;font-size:13px;padding:12px 5px;line-height:20px;text-align:center;font-weight:normal;color:#000;border-collapse:collapse}
+.page-container2 table .img{padding:0;}
+.page-container2 table .tr{text-align:right !important;} /* 우측정렬 */
+.page-container2 table .tl{text-align:left !important;} /* 좌측정렬 */
+.page-container2 table .tc{text-align:center !important;} /* 중앙정렬 */
+.page-container2 table td.num,.scroll-container table td.num{font-size:11px;padding:15px 5px;line-height:15px;text-align:center;font-weight:normal;font-family:Tahoma;color:#9797A6;}
+.page-container2 table td a.content-title{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;line-height:23px;}
+.page-container2 table td a,.scroll-container table td a{color:#005baa;} /*2015-03-18 수정*/
+.page-container2 table td a:hover{color:#00A5BE;}
+.page-container2 table td img{margin:0;padding:0;display:inline;}
+
+/* 2017-01-22 건강한 식생활 > 영양성분표산출 >> 영양성분표등록 css 수정 */
+.my-label2 .emphasis p:last-child{margin-bottom:0;}
+.my-label2 .label-process{background:url(../img/healthyfoodlife/process-arrow.png) no-repeat 0 0;width:995px;height:55px;}  /* 2017-01-20수정 */
+.my-label2 .label-process.step01{background-position:0 0;}
+.my-label2 .label-process.step02{background-position:0 -55px;}
+.my-label2 .label-process.step03{background-position:0 -110px;}
+.my-label2 .label-process ul{margin:0;padding:0 !important;list-style:none;height:55px;}
+.my-label2 .label-process ul li{float:left;display:inline-block;width:33.3333%;}
+.my-label2 .label-process ul li a{display:block;height:55px;line-height:55px;font-weight:bold;font-size:15px;color:#000;text-align:center;}
+.my-label2 .label-process ul li.active a{color:#FFF;}
+.my-label2 .my-info dd{width:190px;} /* 2017-01-20 수정 */
+.my-label2 .my-info dd input{width:190px;}  /* 2017-01-20 수정 */
+.my-label2 .my-info dt:nth-child(3),.my-label .my-info dt:nth-child(11){clear:both;float:left;}
+.my-label2 .my-info dd.full{width:828px;} /* 2017-01-20 수정 */
+.my-label2 .my-info dd.full li{float:left;display:inline-block;margin-right:0;}
+.my-label2 .my-info dd.full li:first-child{margin-right:10px;}
+.my-label2 .my-info dd.full li .selecter .selecter-selected,.my-label .my-info dd.full li .selecter .selecter-item{padding:2px 10px;}
+.my-label2 .nutrition-btn{border:none;border-top:1px solid #D7D7D7;background:none;}
+.my-label2 .search-container{padding:8px 0;}
+.my-label2 .search-container li{margin-left:5px;}
+.my-label2 .total{padding-top:16px;}
+.page-container2.my-label2 .emphasis h3{margin-top:0 !important;}
+.page-container2.my-label2 .emphasis ul{padding:0 !important;font-size:12px;}
+.page-container2.my-label2 .emphasis ul li{float:left;display:inline-block;width:33.333333%;}
+.my-label2 .scroll-xx{margin-bottom:30px;}
+.my-label2 .scroll-xx table{margin-bottom:0 !important;}
+.my-label2 table td a.btn-edit,.my-label2 table td a.btn-del{position:static;display:inline-block;}
+
+/* 2017-01-22 건강한 식생활 > 영양성분표산출 >> 출력설정 css 수정 */
+.print-option-container2{border:1px solid #D7D7D7;border-bottom:none;padding:20px;border-radius:4px 4px 0 0;}
+.print-option-container2 + .print-option-container{border-radius:0;padding:20px}
+.print-option-container2 ul{clear:both;margin:0;padding:0 !important;list-style:none;margin-top:-10px;}
+.print-option-container2 li{float:left;display:inline-block;width:20%;}
+.print-option-container2 li:nth-child(5n+1){clear:both;float:left;display:inline-block;}
+.print-option-container2 label{visibility:visible;position:static;text-indent:0;font-weight:normal;}
+.print-option-container2 label input {vertical-align:middle;margin-top:0;} /* 2017-01-20 추가 */
+.print-option-container2 h4{padding-bottom:15px;border-bottom:1px solid #F3F3F3;font-size:15px;}
+.print-option-container2 h4 span{color:#FD0000;text-align:right;display:inline-block;font-weight:normal;float:right;font-size:12px;margin-top:3px;}
+.print-option-container2 dl.dl-row dt,.print-option-container2 .dl-row dd{float:left;display:inline-block;margin:0;}
+.print-option-container2 dl{margin:0;}
+.print-option-container2 dl.dl-row dt{width:140px !important;margin-top:10px;}
+.print-option-container2 dl.dl-row dd .btn{padding:9px 15px 7px 15px;font-size:13px;}
+.print-option-container2 ul:after,.print-option-container2 dl:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+/* 2017-01-22 건강한 식생활 > 영양성분표산출 >> 출력설정 레이어팝업(confirm alert) css 추가 */
+.flow_chart_modal_bg{position:fixed;z-index:10000;left:0;top:0;width:100%;height:100%;min-height:800px;background:rgba(0,0,0,.7);}
+.flow_chart_popup{position:fixed;z-index:10001;left:50%;top:-9999px;border-radius:5px;background:#f9f9f9;box-shadow:0 0 20px #555;}
+.flow_chart_popup.s400{width:400px;}
+
+.flow_chart_popup .pop_header{margin-top:4px;height:45px;line-height:45px;font-size:18px;font-weight:bold;border-radius:5px 5px 0 0;background:#f1f3f4;border-bottom:1px solid #cccfd3;}
+.flow_chart_popup .pop_container{padding:20px; background:#fff; border-radius:5px 5px 5px 5px;}
+.flow_chart_popup .pop_container .customer_tab:first-child {margin-top:20px;}
+.flow_chart_popup .pop_con_scroll{padding-bottom:0 !important;max-height:500px;overflow-y:auto;}
+.flow_chart_popup .pop_con_scroll .foot_btn{padding-bottom:25px;}
+.flow_chart_popup .popup_close{overflow:hidden;text-indent:-9999px;width:49px;height:49px;display:block;z-index:3200;position:absolute;right:0;top:0;cursor:pointer;background:url(images/btn_pop_close.png) no-repeat 50% 50%;}
+.flow_chart_popup .txt_dialog{text-align:center;padding:20px 0 20px 0;font-size:16px;color:#333;line-height:20px;font-weight:bold;}
+.flow_chart_popup .foot_btn{font-size:0;line-height:0;padding-top:20px;text-align:center;}
+.flow_chart_popup .btn_n{display:inline-block;width:100px;height:38px;line-height:38px;font-size:14px;font-weight:bold;text-align:center;color:#fff;border-radius:4px;border-bottom:2px solid #eee;font-size:14px; padding:0;}
+.flow_chart_popup .foot_btn .btn_n + .btn_n {margin-left:10px;}
+.flow_chart_popup .bg_red{border-color:#d52929;background:#fb3939;}
+.flow_chart_popup .bg_gray{border-color:#727272;background:#8e8e94;}
+.flow_chart_popup .bg_blue{border-color:#727272;background:#00A5BE;}
+
+/* 2017-01-22 건강한 식생활 > 영양성분표산출 >> 결과확인 도안서식 css 수정 */
+.nutrition-label2{margin:auto;border:6px solid #000;margin-bottom:1px;font-family:'Malgun Gothic', 'Apple Gothic', Arial, Helvetica, sans-serif}/*2017-02-09 수정*/
+.nutrition-label2.horizon{margin:auto;border:5px solid #000;margin-bottom:10px;overflow:hidden;}
+.nutrition-label2.standard{width:320px !important;}
+.nutrition-label2.standard .bg_gray.fnm {text-align:left !important;padding-left:3px;}
+.nutrition-label2.standard .str {color:#666 !important;font-size:22px;}
+.nutrition-label2.standard .str span {font-size:24px;font-weight:bold;color:#000;}
+.nutrition-label2.standard .str span.fn {font-weight:normal;color:#666 !important;}
+.nutrition-label2.standard.vertical {width:295px !important;}/*2017-02-09 수정*/
+.nutrition-label2.standard.erratic {width:572px !important;}
+.nutrition-label2.standard.add {width:auto !important;border-radius:12px;float:left;}/*2017-02-09 수정*/
+.nutrition-label2.standard table{border:none;padding:0;margin:0 auto;width:100%;color:#222 !important;letter-spacing:-1px;}
+.nutrition-label2.standard.vertical table{}
+.nutrition-label2.standard .sec_td {font-weight:bold !important;padding:2px 0;}
+.nutrition-label2.standard table tr td{font-size:22px;line-height:1;padding:5px 0;}
+.nutrition-label2.standard table tr td.grp{border-left:1px solid #000;border-right:1px solid #000;text-align:left !important;background:url('../img/healthyfoodlife/tbl_grp_etl.gif') repeat 0 0;padding:0;}
+.nutrition-label2.standard table tr td.grp span {display:inline-block;background:url('../img/healthyfoodlife/tbl_grp2.gif') repeat 0 0;height:34px;vertical-align:middle;}
+.nutrition-label2.standard table tr td.brl{border-left:1px solid #ddd;border-right:1px solid #ddd;text-align:left !important;}
+.nutrition-label2.standard table tr td:first-child{text-align:left;font-weight:bold;padding-left:5px;letter-spacing:-2px;}
+.nutrition-label2.standard table tr td:first-child span {display:inline-block;font-weight:normal;color:#666;padding-left:4px;font-size:22px;}
+.nutrition-label2.standard table tr td:not(:first-child){text-align:right;}
+.nutrition-label2.standard table tr td:last-child{font-weight:500;color:#000;padding-right:7px;}
+.nutrition-label2.standard table tr td:last-child.kn {font-weight:normal;}
+.nutrition-label2.standard table tr:first-child td {font-size:15px;color:#000;line-height:2;}
+.nutrition-label2.standard table tr:first-child td span.opn {text-align:right;font-weight:bold;float:right;font-size:15px;color:#000;line-height:18px;}
+.nutrition-label2.standard table tr:last-child td{font-weight:bold;font-size:13px;padding:3px 5px 5px;border:none;color:#000;line-height:15px;letter-spacing:-1.3px;}
+.nutrition-label2.standard table tr:last-child td span {color:#999;display:inline;font-size:12px;padding-left:0;}
+.nutrition-label2.standard table tr:last-child td.core01 {letter-spacing:-0.2px;}
+.nutrition-label2.standard table tr:last-child td.core01 span {letter-spacing:-1px;}
+.nutrition-label2.standard .sub-item{padding:0px !important;border-top:none;}
+.nutrition-label2.standard .sub-item div {margin-left:14px;display:block;border-top:1px solid #b1afaf !important;padding:5px 0 !important;height:35px;}
+.nutrition-label2.standard .sub-item span{color:#0078cc;}
+.nutrition-label2.standard .sub-item02{padding:0px !important;border-top:none;}
+.nutrition-label2.standard .sub-item02 div {border-top:1px solid #b1afaf !important;padding:5px 7px 5px 0 !important;}
+.nutrition-label2.standard .sub-item02 div.gpp {padding:0 !important;}
+.nutrition-label2.standard .fnm.sub-item02 div {border-top:1px solid #b1afaf !important;padding:5px 0 5px 3px !important;}
+.nutrition-label2.standard table .saperate{background-color:#000;padding:1px 0;}
+.nutrition-label2.standard .label-layout {margin:0px;background-color:#000;width:310px;height:56px;overflow:hidden;}
+.nutrition-label2.standard .label-title{padding:13px 0 10px 4px;font-size:32px;line-height:28px;font-weight:600;color:#fff;float:left;letter-spacing:-3px;}
+.nutrition-label2.standard .label-legend{font-size:15px;color:#fff;padding:10px 6px 0 0;line-height:15px;float:right;text-align:right;font-weight:600;letter-spacing:-1px;}
+.nutrition-label2.standard .label-legend span{font-size:25px;display:inline-block;padding-top:6px;}
+.nutrition-label2.standard.add table {border-top:none;}
+.nutrition-label2.standard.add table tr td:first-child{text-align:left;font-weight:normal;padding-left:0;}
+.nutrition-label2.standard.add table tr:last-child td {text-align:left !important;padding:0;}
+.nutrition-label2.standard.add table th {background-color:#fff;padding-bottom:4px !important;}
+.nutrition-label2.standard.add table td {border-top:none;border-right:1px solid #ddd;color:#000;}
+.nutrition-label2.standard.add table td:last-child {border-right:none;}
+.nutrition-label2.standard.add table th,.nutrition-label2.standard.add table td {text-align:center !important;}
+.nutrition-label2.standard.add table tr th{font-size:20px;line-height:15px;padding:8px 0 12px !important;color:#fff;background-color:#000;font-weight:600;letter-spacing:-3px;white-space:nowrap;}/*2017-02-09 수정*/
+.nutrition-label2.standard.add table tr:first-child td {font-size:18px;font-weight:normal;color:#000;padding:0px !important;}
+.nutrition-label2.standard.add table tr td.f_top {padding:4px 20px 0 !important;line-height:1;}
+.nutrition-label2.standard.add table tr td.f_bottom {padding:0 20px 4px !important;}/*2017-02-09 수정*/
+.nutrition-label2.standard.add span {font-weight:600 !important;font-size:26px !important;color:#000 !important;padding:0 !important;}
+.nutrition-label2.standard.add span.kn {font-weight:normal !important;}
+.nutrition-label2.standard.add .label-layout {margin:0;background-color:#000;width:560px;height:50px;overflow:hidden;}
+.nutrition-label2.standard.add .label-title{padding:0 0 0 12px;font-size:27px;line-height:48px;font-weight:600;color:#fff;float:left;}
+.nutrition-label2.standard.add .pdl00 {padding-right:0px !important;}
+.nutrition-label2.standard.vertical .label-layout {margin:0;background-color:#000;width:283px;height:109px;overflow:hidden;}/*2017-02-09 수정*/
+.nutrition-label2.standard.vertical .label-title{padding:16px 0 14px 6px;font-size:32px;line-height:30px;font-weight:600;color:#fff;float:left;width:220px;}
+.nutrition-label2.standard.vertical .label-legend{font-size:15px;color:#fff;padding:0 14px 0 10px;line-height:14px;float:left;text-align:left;}
+.nutrition-label2.standard.vertical .label-legend span{font-size:25px;display:inline-block;padding-top:8px;}
+.nutrition-label2.standard.erratic .label-layout {margin:0;background-color:#000;width:562px;height:62px;overflow:hidden;}
+.nutrition-label2.standard.erratic .label-title{padding:14px 0 16px 8px;font-size:32px;line-height:28px;font-weight:600;color:#fff;float:left;}
+.nutrition-label2.standard.erratic .label-legend{font-size:15px;color:#fff;padding:14px 14px 0 0;line-height:6px;float:right;text-align:right;}
+.nutrition-label2.standard.erratic .label-legend span{font-size:24px;display:inline-block;padding-top:16px;}
+.nutrition-label2.standard.erratic table{border:none;padding:0;margin:0 auto 18px;width:95%;color:#222 !important;border-top:5px solid #696969;}
+.nutrition-label2.standard.erratic table tr td{font-size:12px;line-height:15px;padding:2px 0;}
+.nutrition-label2.standard.erratic table tr td.brl{border-left:1px solid #ddd;border-right:1px solid #ddd;text-align:center !important;}
+.nutrition-label2.standard.erratic table tr td{text-align:center;font-weight:bold}
+.nutrition-label2.standard.erratic table tr td span {display:inline-block;font-weight:normal;color:#0078cc;padding-left:6px;}
+.nutrition-label2.standard.erratic table tr td span + span {color:#0078cc;}
+.nutrition-label2.standard.erratic table tr td {font-weight:bold;}
+.nutrition-label2.standard.erratic table tr td:last-child{font-weight:bold;color:#000;}
+.nutrition-label2.standard.erratic table tr:last-child td{font-weight:normal;font-size:11px;padding:5px 0 0 0;border:none;text-align:left;}
+.nutrition-label2.standard.erratic table tr:last-child td span {color:#999;display:inline;}
+.nutrition-label2.standard.erratic table .sub-item{padding-left:40px;font-weight:normal !important;}
+.nutrition-label2.standard.erratic table .saperate{background-color:#696969;padding:1px 0;}
+.nutrition-label2.standard .w160 {width:160px;}
+.nutrition-label2.standard .w164 {width:164px;}
+.nutrition-label2.standard .w166 {width:166px;}
+.nutrition-label2.standard .w194 {width:194px;}
+.nutrition-label2.standard .w200 {width:200px;}
+.nutrition-label2.irregular{width:500px !important;}/*2017-02-09 수정*/
+.nutrition-label2.irregular .label-layout {margin:0;background-color:#000;width:490px;height:60px;overflow:hidden;}/*2017-02-09 수정*/
+.nutrition-label2.irregular .fenge {border-right:1px solid #000 !important;padding-right:7px;}
+.nutrition-label2.irregular .bg_gray {background-color:#c6c6c6;}
+.nutrition-label2.horizon{width:705px !important;}/*2017-02-09 수정*/
+.nutrition-label2.horizon .str {color:#666 !important;padding-right:7px !important;}
+.nutrition-label2.horizon .str span {font-weight:600;color:#000 !important;font-size:26px;}
+.nutrition-label2.horizon table{float:left;clear:none;border:none;padding:0;margin:0;color:#000 !important;width:564px;}/*2017-02-09 수정*/
+.nutrition-label2.horizon table table{border:none;padding:0;margin:0;color:#000 !important;width:100%;}
+.nutrition-label2.horizon .label-layout {float:left;margin:0;background-color:#000;width:131px;height:202px;overflow:hidden;}
+.nutrition-label2.horizon .label-title{padding:13px 0 16px 4px;font-size:30px;line-height:28px;font-weight:600;color:#fff;float:left;}
+.nutrition-label2.horizon .label-legend{font-size:15px;color:#fff;padding:0 14px 0 8px;line-height:22px;float:left;text-align:left;font-weight:600;letter-spacing:-1px;}
+.nutrition-label2.horizon .label-legend span{font-size:25px;display:inline-block;letter-spacing:-1px;}
+.nutrition-label2.horizon .fenge {border-right:5px solid #000 !important;}
+.nutrition-label2.horizon > table.layout tr td{font-size:12px;line-height:26px;padding:2px 0;}
+.nutrition-label2.horizon > table.layout tr td.pdl07 {padding-left:7px !important;}
+.nutrition-label2.horizon > table.layout tr:first-child td{text-align:left;font-weight:600;font-size:15px;}
+.nutrition-label2.horizon > table.layout tr:first-child td:first-child{font-weight:600;font-size:15px;}
+.nutrition-label2.horizon > table.layout tr:first-child td:first-child.fb{font-weight:bold;padding-left:7px;}
+.nutrition-label2.horizon > table.layout > tbody > tr:first-child > td:not(:first-child){text-align:left;}
+.nutrition-label2.horizon > table.layout > tbody > tr:first-child > td:not(:first-child).ar{text-align:right;padding-right:10px;font-size:15px;line-height:18px;letter-spacing:-2px;}
+.nutrition-label2.horizon > table.layout > tbody > tr:first-child > td:first-child + td + td + td,.nutrition-label2.horizon > table.layout > tbody > tr:first-child > td:first-child + td + td + td + td + td + td{text-align:right;}
+.nutrition-label2.horizon > table.layout tr td:first-child{font-weight:bold;text-align:left;}
+.nutrition-label2.horizon > table.layout tr:last-child td{font-weight:bold;font-size:12px;border:none !important;text-align:left;}
+.nutrition-label2.horizon > table.layout tr:last-child td span {color:#999;font-weight:bold;}
+.nutrition-label2.horizon > table.layout tr:last-child td.core02 span {letter-spacing:-1.2px;}
+.nutrition-label2.horizon table .label-title{padding:30px 0 10px 8px;text-align:center !important;letter-spacing:8px;font-size:25px;font-weight:bold;display:block;}
+.nutrition-label2.horizon table .label-legend{font-size:11px;padding:10px 0;line-height:15px;display:block;text-align:center;}
+.nutrition-label2.horizon table .space{background-color:#FFF;border:1px solid #FFF !important;}
+.nutrition-label2.horizon > table.layout table tr:first-child td:first-child,.nutrition-label2.horizon > table.layout table tr:first-child td{background:#FFF;border:none;font-size:12px;padding:4px 0;}
+.nutrition-label2.horizon > table.layout > tbody > tr:first-child + tr > td{padding-bottom:0;border-bottom:4px solid #000;}
+.nutrition-label2.horizon > table.layout table td{font-size:22px !important;padding:2px 0;letter-spacing:-2px;}
+.nutrition-label2.horizon > table.layout table td.pdr10 {padding-right:10px !important;}
+.nutrition-label2.horizon > table.layout table td.pdt00 {padding-top:0px !important;}
+.nutrition-label2.horizon > table.layout table td.pdl07 {padding-left:7px !important;}
+.nutrition-label2.horizon > table.layout table td:first-child{text-align:left !important;padding-left:7px;}
+.nutrition-label2.horizon > table.layout table td:first-child span {font-weight:normal;display:inline-block;padding-left:4px;color:#666 !important;}
+.nutrition-label2.horizon > table.layout table tr td:not(:first-child){text-align:right !important;font-weight:normal;}
+.nutrition-label2.horizon > table.layout table td:last-child,.nutrition-label2.horizon > table.layout table tr:last-child td:first-child{font-weight:bold;}
+.nutrition-label2.horizon > table.layout table tr:last-child td{border-top:1px solid #000 !important;}
+.nutrition-label2.horizon > table.layout table .sub-item{padding:0px !important;border-top:none;}
+.nutrition-label2.horizon > table.layout table .sub-item div {margin-left:14px;display:block;border-top:1px solid #b1afaf !important;padding:3px 0 !important;font-weight:600 !important;}
+.nutrition-label2.horizon > table.layout table .sub-item02{border-top:1px solid #b1afaf !important;}
+.nutrition-label2.horizon .zuihou {line-height:14px !important;padding:4px 8px !important;letter-spacing:-1.8px;}
+.nutrition-label2.horizon .tdzuihou {font-size:15px !important;line-height:18px !important;color:#000 !important;letter-spacing:-2px;}
+.nutrition-label2.linear,.nutrition-label2.multiple{width:680px !important;}
+.nutrition-label2.linear table{border:none;padding:0;margin:0;color:#000 !important;}
+.nutrition-label2.linear table tr td{font-size:12px;line-height:18px;padding:10px 0;border-bottom:none;}
+.nutrition-label2.linear table tr:first-child td{text-align:left;font-weight:bold;border-bottom:5px solid #696969;padding-bottom:10px;}
+.nutrition-label2.linear table tr td:first-child{text-align:center;}
+.nutrition-label2.linear table tr td:last-child{text-align:left;}
+.nutrition-label2.linear table tr:last-child td{font-weight:normal;font-size:11px;padding:0 0 0 200px;border:none;}
+.nutrition-label2.linear table .label-title{padding:0 0 10px 15px;text-align:center !important;letter-spacing:15px;font-size:25px;font-weight:bold;}
+.nutrition-label2.linear table .label-legend{font-size:11px;vertical-align:bottom;}
+.nutrition-label2.multiple table{border:none;padding:0;margin:0;color:#000 !important;}
+.nutrition-label2.multiple table tr td{font-size:12px;line-height:15px;padding:2px 0;}
+.nutrition-label2.multiple table tr:first-child td{text-align:left;font-weight:bold;border-bottom:5px solid #696969;padding-bottom:10px;}
+.nutrition-label2.multiple table tr:first-child td:not(:first-child){text-align:left;}
+.nutrition-label2.multiple table tr:first-child td:last-child{padding-top:25px;font-size:11px;}
+.nutrition-label2.multiple table tr:first-child + tr td{text-align:left;font-weight:normal !important;font-size:11px !important;border-bottom:2px solid #696969;padding:7px 0;}
+.nutrition-label2.multiple table tr td:not(:first-child){text-align:right;}
+.nutrition-label2.multiple table tr td:first-child{font-weight:bold;text-align:left;}
+.nutrition-label2.multiple table tr:last-child td{font-weight:normal;font-size:11px;padding:5px 0 0 0;border:none !important;text-align:center;}
+.nutrition-label2.multiple table .label-title{padding:10px 0 10px 15px;text-align:center !important;letter-spacing:15px;font-size:25px;font-weight:bold;}
+.nutrition-label2.multiple table .label-legend{font-size:11px;padding:10px 0;border-bottom:5px solid #696969;line-height:15px;}
+.nutrition-label2.multiple table .sub-item{padding-left:40px;font-weight:normal !important;}
+.nutrition-label2.multiple table .space{background-color:#FFF;border:1px solid #FFF !important;}
+.nutrition-label2 + p{display:block;margin-bottom:30px;text-align:center;}
+.my-label .nutrition-btn{border:none;border-top:1px solid #D7D7D7;background:none;}
+.inner-body .my-label{border-top:none;}
+
+.nutrition-label2.grp {width:375px !important;}/*2017-02-09 수정*/
+.nutrition-label2.grp .label-layout {width:363px;}/*2017-02-09 수정*/
+.nutrition-label2.grp table tr:first-child td {font-size:15px;color:#000;line-height:18px;}
+.nutrition-label2.grp .sec_td {padding:4px 0 8px;}
+
+/* 2017-01-22 건강한 식생활 > 영양성분표산출 >> 결과확인 도안서식 css 추가 */
+.tbl_su {width:100%;letter-spacing:-1px;}
+.tbl_su ul {padding:0;margin:0;}
+.tbl_su li {border-top:1px solid #000;padding:0 10px;list-style:none;line-height:30px;overflow:hidden;}
+.tbl_su li.first_line {line-height:45}
+.tbl_su li.first_line div {font-size:14px !important;color:#444 !important;}
+.tbl_su li.first_line div.gf01 {height:45px;line-height:34px;padding:6px 0;}
+.tbl_su li.first_line div.gf02 {text-align:right;height:45px;line-height:17px;padding:6px 0;}
+.tbl_su li.sb_item {margin-left:20px;border-top:1px solid #ccc;}
+.tbl_su li.sb_item .flt_l {margin-left:0px;}
+.tbl_su .flt_l {float:left;font-size:18px;font-weight:600;}
+.tbl_su .flt_l span {display:inline-block;font-weight:normal;color:#666;padding-left:4px;font-size:16px;}
+.tbl_su .flt_r {float:right;font-size:14px;font-weight:600;color:#666;}
+.tbl_su .flt_r span {font-size:18px;font-weight:600;color:#000;}
+.tbl_su li.last_line {border-top:4px solid #000;border-bottom:none;}
+.tbl_su li.last_line div {font-size:11px;color:#000;line-height:14px;font-weight:600;padding:5px 0;}
+.tbl_su li.last_line div span {color:#666;font-weight:normal;}
+
+.tbl_luan {width:100%;letter-spacing:-2px;}
+.tbl_luan ul {overflow:hidden;padding:0;margin:0;border-bottom:1px solid #000;}
+.tbl_luan ul.s02 li {padding:0 3px;}
+.tbl_luan ul.s02 li span:first-child {}
+.tbl_luan ul.s03 {border-bottom:5px solid #000;}
+.tbl_luan li {float:left;color:#000;border-right:1px solid #000;font-size:18px;padding:0 6px;list-style:none;line-height:30px;overflow:hidden;}
+.tbl_luan li.brn {border-right:none;}
+.tbl_luan li span {font-size:22px;font-weight:600;}
+.tbl_luan .lst {padding:0 2px 3px 4px;color:#000;font-size:12px;font-weight:600;letter-spacing:-0.3px;}
+.tbl_luan .lst span {color:#666;}
+.sens01 {width:770px;margin:0 auto;color:#000;font-weight:700;font-size:15px;margin-bottom:5px;margin-left:5px;}
+.sens02 {width:770px;margin:0 auto;color:#000;font-weight:700;font-size:13px;margin-bottom:2px;margin-left:5px;clear:both;}/*2017-02-09 수정*/
+.sens02 span {color:#666;font-weight:normal;}
+.let01 {letter-spacing:-1px !important;}
+.let02 {letter-spacing:-2px !important;}
+.let03 {letter-spacing:-3px !important;}
+.let04 {letter-spacing:-4px !important;}
+/*============================================================
+나의영양성분표(영양성분표 산출) 메뉴 관련 CSS 추가 END
+============================================================*/
+
+/*============================================================
+메뉴실명제관련 CSS 추가 
+============================================================*/
+.menu-admin .box03{display: block; background-color: #f0f0f354; line-height: 50px;  margin-bottom: 32px;padding: 0;text-align: center;border-top: 1px solid #D7D7D7;border-bottom: 1px solid #d7d7d7;font-size: 13px;font-weight: bold; color: #31313F;padding-top:10px;     margin: 30px auto 0; width: 995px;    margin-bottom: 40px; height: 70px;}
+.menu-admin .box03 span { font-size:larger; margin-right:20px; margin-left:20px;}
+.menu-admin .box03 span b{font-weight: bold;}
+.menu-admin .box03 span h{font-weight: lighter; padding-left: 5px; padding-right:5px;}
+.p-box{border-left:1px solid #d7d7d7; border-right:1px solid #d7d7d7;}
+.p-box b{padding-right:10px; border-right:0px solid #c0c0c0; margin-right:10px; position:relative;}
+.p-box b:before{content:""; display:block; width:1px; height:15px; background:#c0c0c0; position:absolute; right: -3px; top: 5px; }
+.p-icon{background:url("../img/common/p-i.png") no-repeat left center; display:inline-block; padding-left:35px; margin:0px; margin-right: 40px; font-weight:400;}
+.p-icon1{background:url("../img/common/p-i2.png") no-repeat left center; display:inline-block; padding-left:35px; margin:0px; font-weight:400;}
+/*============================================================
+메뉴실명제관련 CSS 추가 
+============================================================*/
