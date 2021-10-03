@@ -1,0 +1,103 @@
+/* subWrap */
+#subWrap{clear: both; position: relative; width:100%; min-height: 750px; background: #fff;}
+/*subVisual*/
+.subVisual{position: relative; min-width: 1000px; height: 125px; z-index: 10; margin: 0 auto; padding: 0; background: #fff;} /*이거뭐지?*/
+.subVisual.subbg02{background:#fff;  background-size:cover;}
+.subVisual .subBanner{position:relative; width:1000px; height:125px; margin:0 auto;}
+.subVisual .subBanner p{color:#fff; text-align:left; position:absolute;}
+.subVisual .subBanner .smallText{font-size:1.05em; font-weight:400; top:33px; left:3px;}
+.subVisual .subBanner .bigText{font-size:1.75em; font-weight:500; bottom:38px;}
+/*sContainerWrap*/
+.sContainerWrap{position:relative; width:1000px; height:auto; margin:0 auto; background:transparent;}
+.clearfix:after{clear:both; display:block; width:0; height:0; visibility:hidden; overflow:hidden; content:'.'; font-size:0; line-height:0;}
+/*sidemenu*/
+.sidemenu{width:200px; margin:-10px 0 0 0; float:left; z-index:99;}
+.sidemenu .smTitle{position:relative; height:120px; background:url(https://www.fg-a.com/wallpapers/2017-4-light-background-geo.jpg) no-repeat center center; z-index:10; background-size: cover;}
+.sidemenu .smTitle h2{position:absolute; bottom:20px; left:25px; color:#fff; font-size:1.5em; font-weight:500; text-align:left;}
+.sidemenu .smList{width:100%; background:#fff;}
+.sidemenu .smList ul li{height:58px; border-bottom:1px solid #f1fafd;}
+.sidemenu .smList ul li a{display:block; width:100%; height:58px; padding:0 0 0 25px; box-sizing:border-box; font-size:1.04em; line-height:60px; letter-spacing:-1px; color:#484848; text-decoration: none;} /*진회색*/
+.sidemenu .smList ul li a:hover{background:#f1fafd;}
+.sidemenu .smList ul li.actived{height:60px; background:#f1fafd; border-bottom:none;}
+.sidemenu .smList ul li.actived a{height:60px; line-height:62px; color:#0a326f;}
+.sidemenu .smList ul li.actived a:hover{background:#f1fafd;}
+/*subcontents*/
+.sContainer{width:760px; min-height:625px; margin:0 0 0 40px; float:right;}
+.sContainer.sHead{width: 760px; padding:28px 0 35px 0; box-sizing:border-box; border-bottom:3px solid #f1fafd;}
+.sContainer .sHead .path{text-align:right;}
+.sContainer .sHead .path ul li{display:inline-block; font-size:.75em; font-weight:400; color:#a2a2a2; letter-spacing:-0.5px;}
+.sContainer .sHead .path ul li:after{content:'\3009'; padding:0 0 0 6px; font-size:.563em; font-family:sans-serif;}
+.sContainer .sHead .path ul li.home{padding-left:17px; background:url(https://icons-for-free.com/iconfiles/png/512/HOME-131994911289288683.png) no-repeat 0 1px;}
+.sContainer .sHead .path ul li.actived:after{content:''; display:none;}
+.sContainer .sHead .sTitle{text-align:left;}
+.sContainer .sHead .sTitle h3{font-size:1.875em; font-weight:500; letter-spacing:-1px; color:#333;}
+
+/*.sContainer .sContents{clear:both; width:760px; padding:23px 0; text-align:left;}
+.sContainer .sContents .sconTitle{margin-bottom:20px; padding-left:22px; background:url(/html_2018/images/sub/ico_titlebul.png) no-repeat 0 3px; font-size:1.188em; font-weight:500; color:#333;}
+.sContainer .sContents .scon{margin-bottom:40px; font-size:.938em; font-weight:400; letter-spacing:-0.7px; line-height:180%; color:#444; word-break:keep-all;}
+.sContainer .sContents .scon p, .sContainer .sContents .scon span{display:block;} /*43*/ 
+
+
+
+
+
+/*recalldefectivefood.html, search combobox*/
+
+.search_wrap {margin-bottom:40px;}
+/*.select-container{display: inline-block; position:relative;}
+.select-container:after{position: absolute; display: block; z-index: 1; top: 50%; right: 20px; transform: translate(0,-50%);}
+.select-container:after{width: 0; height: 0; border-bottom: none; border: 10px solid red;}
+.select-container:after{border-left: 7px solid transparent; border-right: 7px solid transparent;}*/
+
+/*검색어 창*/
+#bo_list {position:relative; padding:23px 0;}
+#bo_sch {width:400px;margin:0 auto;border:1px solid #ccc;background:#fff;border-radius:3px}
+#bo_sch:after {display:block;visibility:hidden;clear:both;content:""}
+#bo_sch legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
+#bo_sch select{border:0;padding:3px 5px;margin:0;width:115px;height:38px;float:left;border-right:1px solid #ddd;font-size:.813em;border-radius:3px 0 0 3px;}
+#bo_sch .sch_input{width:243px;height:38px;border:0;padding:3px 10px;background-color:transparent;float:left;font-size:.813em;letter-spacing:-1px;}
+#bo_sch .sch_btn{height:38px;float:left;background:none;border:0;width:40px;font-size:.813em;}
+
+
+/*fancy box*/
+#inner-view .inner-body:after,.issue-info dl:after,.info-caption:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
+
+
+/*board list*/
+.list-container,.view-container,.write-container{border-top:2px solid #424252;}
+.list-container.recipe h2{font-size:25px;margin:30px 0 20px 0;font-family:ng, Arial, Helvetica, sans-serif;}
+.total{float:left;display:inline-block;padding-top:27px;padding-left:3px;font-family:Tahoma;font-size:11px;color:#9797A5;}
+
+
+main {position:relative; padding-top:55px;}
+main * {box-sizing:border-box;}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section { margin:0; padding:0; border:0; font-size:100%;}
+
+
+
+body,html, article, article p, p, article pre, pre, .breadcrumb{letter-spacing:-0.05em}
+
+body,html{width:100%; font-size:14px;margin:0;color:#111;}
+
+body {margin:0; padding:0; font-size:14px; word-break:break-all; -webkit-text-size-adjust:none; min-width:1220px;}
+
+body, input, textarea, select, button, table, h1, h2, h3, h4, h5{font-size:14px; line-height:1.286em;}
+
+body{font-family: 'NotoL',Dotum,'굴림',Gulim,Helvetica,sans-serif; font-weight:300;}
+
+
+/*html default*/
+legend, table, caption, article, aside, hgroup, header, footer, figure, figcaption, nav, section { margin:0; padding:0; border:0; font-size:100%;}
+
+
+/*search container*/
+.search-container{margin:0;padding:5px 0 12px 0;border-bottom:1px solid #D7D7D7;}
+
+
+
+.tab-container:after,.search-container:after,.cat-container:after,.category:after,.keyword:after,.board-footer:after,.view-container:after,.write-container:after,.write-container form .file-container:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
