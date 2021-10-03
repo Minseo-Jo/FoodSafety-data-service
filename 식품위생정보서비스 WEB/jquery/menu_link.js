@@ -1,3 +1,9 @@
+/*
+Original Code
+http://software.khu.ac.kr/html_2018/js/menuLink.js
+*/
+
+
 function menuLink(fName,mNum,sNum,tNum){
 	/*
 	fName : �대뜑紐�
